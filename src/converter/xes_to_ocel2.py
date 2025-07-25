@@ -132,7 +132,7 @@ def xes_to_ocel2(xes_path, ocel_path,
                 "qualifier": resource_object_type
             })
         
-        # create event attribtues from remaining columns
+        # create event attributes from remaining columns
         for col, val in row.items():
             if col not in ['concept:name', 'case:concept:name', 'time:timestamp', resource_attr]:
                 if pd.notna(val):

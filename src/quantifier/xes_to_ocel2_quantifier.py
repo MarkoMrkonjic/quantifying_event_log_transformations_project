@@ -44,7 +44,7 @@ def xes_to_ocel2_quantifier(xes_file_path: str, ocel2_file_path: str):
     ])
     
 
-    # 2. object-centry enrichment metrics
+    # 2. object-centric enrichment metrics
 
     # object discovery rate
     # exception: at least cases and resources as objects

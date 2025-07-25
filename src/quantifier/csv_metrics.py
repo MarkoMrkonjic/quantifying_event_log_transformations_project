@@ -19,7 +19,7 @@ def get_csv_metrics(file_path):
     if missing:
         raise ValueError(f"Spalten fehlen: {missing}")
     
-    # declare emtpy case_ids to SYSTEM
+    # declare empty case_ids to SYSTEM
     df[case_column] = df[case_column].fillna('SYSTEM').astype(str)
     df.loc[df[case_column].str.strip() == '', case_column] = 'SYSTEM'
 

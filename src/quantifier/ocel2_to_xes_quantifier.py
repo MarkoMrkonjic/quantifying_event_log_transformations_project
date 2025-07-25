@@ -54,7 +54,7 @@ def ocel2_to_xes_quantifier(ocel2_file_path: str, xes_file_path: str):
     e2o_loss = max(0, 1 - (1 / ocel2_metrics['avg_e2o_per_event'])) if ocel2_metrics['avg_e2o_per_event'] > 0 else 0
     quality_scores['e2o_relationship_loss'] = e2o_loss
     
-    # multi-object assosiation loss
+    # multi-object association loss
     avg_objects_per_event = ocel2_metrics['avg_e2o_per_event']
     multi_object_loss = max(0, 1 - (1 / avg_objects_per_event)) if avg_objects_per_event > 0 else 0
     quality_scores['multi_object_loss'] = multi_object_loss
@@ -112,7 +112,7 @@ def ocel2_to_xes_quantifier(ocel2_file_path: str, xes_file_path: str):
         'quality_score': total_score,
         'loss_percentage': 1 - information_loss_score, #inverted
         'dimension_scores': {
-            'basic_preversation': round(basic_preservation_score, 2),
+            'basic_preservation': round(basic_preservation_score, 2),
             'information_loss': round((1 - information_loss_score), 2),
             'complexity': round((1 - complexity_score), 2)
         },

@@ -26,7 +26,7 @@ def csv_to_xes(csv_path: str, xes_path: str,
     attr_cols = [c for c in df.columns if c not in [case_col, activity_col, timestamp_col]]
     
     for _, row in df.iterrows():
-        # declare emtpy case_ids to SYSTEM
+        # declare empty case_ids to SYSTEM
         raw_case = row.get(case_col)
         if pd.isna(raw_case) or not str(raw_case).strip():
             case_ids = ['SYSTEM']
