@@ -1,0 +1,13 @@
+case_id,activity,timestamp,cost,status
+case_Case_001,Create Order,2024-01-15 09:00:00+00:00,50,pending
+case_Case_001,Check Inventory,2024-01-15 09:15:00+00:00,25,completed
+case_Case_002,Create Order,2024-01-15 10:00:00+00:00,50,pending
+case_Case_002,Check Inventory,2024-01-15 10:20:00+00:00,25,failed
+case_Case_001,Process Payment,2024-01-15 10:30:00+00:00,100,completed
+case_Case_002,Cancel Order,2024-01-15 10:45:00+00:00,10,completed
+case_Case_001,Ship Order,2024-01-15 14:00:00+00:00,75,completed
+case_Case_003,Create Order,2024-01-16 08:30:00+00:00,50,pending
+case_Case_003,Check Inventory,2024-01-16 08:45:00+00:00,25,completed
+case_Case_003,Process Payment,2024-01-16 09:30:00+00:00,100,failed
+case_Case_003,Retry Payment,2024-01-16 11:00:00+00:00,100,completed
+case_Case_003,Ship Order,2024-01-16 15:30:00+00:00,75,completed

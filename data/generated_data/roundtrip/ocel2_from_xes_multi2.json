@@ -1,0 +1,2386 @@
+{
+  "objectTypes": [
+    {
+      "name": "case",
+      "attributes": []
+    },
+    {
+      "name": "resource",
+      "attributes": []
+    }
+  ],
+  "eventTypes": [
+    {
+      "name": "Order Created",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "type": "string"
+        },
+        {
+          "name": "urgency",
+          "type": "string"
+        },
+        {
+          "name": "locations",
+          "type": "string"
+        },
+        {
+          "name": "products",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "Items Verified",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "type": "string"
+        },
+        {
+          "name": "urgency",
+          "type": "string"
+        },
+        {
+          "name": "locations",
+          "type": "string"
+        },
+        {
+          "name": "products",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "Payment Confirmed",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "type": "string"
+        },
+        {
+          "name": "urgency",
+          "type": "string"
+        },
+        {
+          "name": "locations",
+          "type": "string"
+        },
+        {
+          "name": "products",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "Items Packed",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "type": "string"
+        },
+        {
+          "name": "urgency",
+          "type": "string"
+        },
+        {
+          "name": "locations",
+          "type": "string"
+        },
+        {
+          "name": "products",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "Shipment Ready",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "type": "string"
+        },
+        {
+          "name": "urgency",
+          "type": "string"
+        },
+        {
+          "name": "locations",
+          "type": "string"
+        },
+        {
+          "name": "products",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "Order Cancelled",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "type": "string"
+        },
+        {
+          "name": "urgency",
+          "type": "string"
+        },
+        {
+          "name": "locations",
+          "type": "string"
+        },
+        {
+          "name": "products",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "Priority Handling",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "type": "string"
+        },
+        {
+          "name": "urgency",
+          "type": "string"
+        },
+        {
+          "name": "locations",
+          "type": "string"
+        },
+        {
+          "name": "products",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "Express Delivery",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "type": "string"
+        },
+        {
+          "name": "urgency",
+          "type": "string"
+        },
+        {
+          "name": "locations",
+          "type": "string"
+        },
+        {
+          "name": "products",
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "id": "case_PO_001",
+      "type": "case",
+      "attributes": [],
+      "relationships": []
+    },
+    {
+      "id": "case_PO_002",
+      "type": "case",
+      "attributes": [],
+      "relationships": []
+    },
+    {
+      "id": "case_PO_003",
+      "type": "case",
+      "attributes": [],
+      "relationships": []
+    },
+    {
+      "id": "case_PO_004",
+      "type": "case",
+      "attributes": [],
+      "relationships": []
+    }
+  ],
+  "events": [
+    {
+      "id": "e0",
+      "type": "Order Created",
+      "time": "2024-01-22T09:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Sales"
+        },
+        {
+          "name": "products",
+          "value": "Laptop"
+        },
+        {
+          "name": "locations",
+          "value": "Berlin"
+        },
+        {
+          "name": "urgency",
+          "value": "high"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_001",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e1",
+      "type": "Order Created",
+      "time": "2024-01-22T09:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Sales"
+        },
+        {
+          "name": "products",
+          "value": "Monitor"
+        },
+        {
+          "name": "locations",
+          "value": "Berlin"
+        },
+        {
+          "name": "urgency",
+          "value": "high"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_001",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e2",
+      "type": "Order Created",
+      "time": "2024-01-22T09:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Sales"
+        },
+        {
+          "name": "products",
+          "value": "Keyboard"
+        },
+        {
+          "name": "locations",
+          "value": "Berlin"
+        },
+        {
+          "name": "urgency",
+          "value": "high"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_001",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e3",
+      "type": "Order Created",
+      "time": "2024-01-22T09:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Support"
+        },
+        {
+          "name": "products",
+          "value": "Laptop"
+        },
+        {
+          "name": "locations",
+          "value": "Berlin"
+        },
+        {
+          "name": "urgency",
+          "value": "high"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_001",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e4",
+      "type": "Order Created",
+      "time": "2024-01-22T09:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Support"
+        },
+        {
+          "name": "products",
+          "value": "Monitor"
+        },
+        {
+          "name": "locations",
+          "value": "Berlin"
+        },
+        {
+          "name": "urgency",
+          "value": "high"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_001",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e5",
+      "type": "Order Created",
+      "time": "2024-01-22T09:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Support"
+        },
+        {
+          "name": "products",
+          "value": "Keyboard"
+        },
+        {
+          "name": "locations",
+          "value": "Berlin"
+        },
+        {
+          "name": "urgency",
+          "value": "high"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_001",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e6",
+      "type": "Items Verified",
+      "time": "2024-01-22T10:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Warehouse"
+        },
+        {
+          "name": "products",
+          "value": "Laptop"
+        },
+        {
+          "name": "locations",
+          "value": "Berlin"
+        },
+        {
+          "name": "urgency",
+          "value": "high"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_001",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e7",
+      "type": "Items Verified",
+      "time": "2024-01-22T10:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Warehouse"
+        },
+        {
+          "name": "products",
+          "value": "Laptop"
+        },
+        {
+          "name": "locations",
+          "value": "Hamburg"
+        },
+        {
+          "name": "urgency",
+          "value": "high"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_001",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e8",
+      "type": "Items Verified",
+      "time": "2024-01-22T10:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Warehouse"
+        },
+        {
+          "name": "products",
+          "value": "Monitor"
+        },
+        {
+          "name": "locations",
+          "value": "Berlin"
+        },
+        {
+          "name": "urgency",
+          "value": "high"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_001",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e9",
+      "type": "Items Verified",
+      "time": "2024-01-22T10:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Warehouse"
+        },
+        {
+          "name": "products",
+          "value": "Monitor"
+        },
+        {
+          "name": "locations",
+          "value": "Hamburg"
+        },
+        {
+          "name": "urgency",
+          "value": "high"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_001",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e10",
+      "type": "Items Verified",
+      "time": "2024-01-22T10:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Warehouse"
+        },
+        {
+          "name": "products",
+          "value": "Keyboard"
+        },
+        {
+          "name": "locations",
+          "value": "Berlin"
+        },
+        {
+          "name": "urgency",
+          "value": "high"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_001",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e11",
+      "type": "Items Verified",
+      "time": "2024-01-22T10:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Warehouse"
+        },
+        {
+          "name": "products",
+          "value": "Keyboard"
+        },
+        {
+          "name": "locations",
+          "value": "Hamburg"
+        },
+        {
+          "name": "urgency",
+          "value": "high"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_001",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e12",
+      "type": "Payment Confirmed",
+      "time": "2024-01-22T11:30:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Finance"
+        },
+        {
+          "name": "products",
+          "value": "Laptop"
+        },
+        {
+          "name": "locations",
+          "value": "Berlin"
+        },
+        {
+          "name": "urgency",
+          "value": "high"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_001",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e13",
+      "type": "Payment Confirmed",
+      "time": "2024-01-22T11:30:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Finance"
+        },
+        {
+          "name": "products",
+          "value": "Monitor"
+        },
+        {
+          "name": "locations",
+          "value": "Berlin"
+        },
+        {
+          "name": "urgency",
+          "value": "high"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_001",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e14",
+      "type": "Payment Confirmed",
+      "time": "2024-01-22T11:30:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Finance"
+        },
+        {
+          "name": "products",
+          "value": "Keyboard"
+        },
+        {
+          "name": "locations",
+          "value": "Berlin"
+        },
+        {
+          "name": "urgency",
+          "value": "high"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_001",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e15",
+      "type": "Items Packed",
+      "time": "2024-01-22T14:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Warehouse"
+        },
+        {
+          "name": "products",
+          "value": "Laptop"
+        },
+        {
+          "name": "locations",
+          "value": "Hamburg"
+        },
+        {
+          "name": "urgency",
+          "value": "medium"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_001",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e16",
+      "type": "Items Packed",
+      "time": "2024-01-22T14:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Warehouse"
+        },
+        {
+          "name": "products",
+          "value": "Monitor"
+        },
+        {
+          "name": "locations",
+          "value": "Hamburg"
+        },
+        {
+          "name": "urgency",
+          "value": "medium"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_001",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e17",
+      "type": "Items Packed",
+      "time": "2024-01-22T14:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Warehouse"
+        },
+        {
+          "name": "products",
+          "value": "Keyboard"
+        },
+        {
+          "name": "locations",
+          "value": "Hamburg"
+        },
+        {
+          "name": "urgency",
+          "value": "medium"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_001",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e18",
+      "type": "Items Packed",
+      "time": "2024-01-22T14:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Logistics"
+        },
+        {
+          "name": "products",
+          "value": "Laptop"
+        },
+        {
+          "name": "locations",
+          "value": "Hamburg"
+        },
+        {
+          "name": "urgency",
+          "value": "medium"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_001",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e19",
+      "type": "Items Packed",
+      "time": "2024-01-22T14:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Logistics"
+        },
+        {
+          "name": "products",
+          "value": "Monitor"
+        },
+        {
+          "name": "locations",
+          "value": "Hamburg"
+        },
+        {
+          "name": "urgency",
+          "value": "medium"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_001",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e20",
+      "type": "Items Packed",
+      "time": "2024-01-22T14:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Logistics"
+        },
+        {
+          "name": "products",
+          "value": "Keyboard"
+        },
+        {
+          "name": "locations",
+          "value": "Hamburg"
+        },
+        {
+          "name": "urgency",
+          "value": "medium"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_001",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e21",
+      "type": "Shipment Ready",
+      "time": "2024-01-22T16:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Logistics"
+        },
+        {
+          "name": "products",
+          "value": "Laptop"
+        },
+        {
+          "name": "locations",
+          "value": "Hamburg"
+        },
+        {
+          "name": "urgency",
+          "value": "medium"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_001",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e22",
+      "type": "Shipment Ready",
+      "time": "2024-01-22T16:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Logistics"
+        },
+        {
+          "name": "products",
+          "value": "Laptop"
+        },
+        {
+          "name": "locations",
+          "value": "Munich"
+        },
+        {
+          "name": "urgency",
+          "value": "medium"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_001",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e23",
+      "type": "Shipment Ready",
+      "time": "2024-01-22T16:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Logistics"
+        },
+        {
+          "name": "products",
+          "value": "Monitor"
+        },
+        {
+          "name": "locations",
+          "value": "Hamburg"
+        },
+        {
+          "name": "urgency",
+          "value": "medium"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_001",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e24",
+      "type": "Shipment Ready",
+      "time": "2024-01-22T16:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Logistics"
+        },
+        {
+          "name": "products",
+          "value": "Monitor"
+        },
+        {
+          "name": "locations",
+          "value": "Munich"
+        },
+        {
+          "name": "urgency",
+          "value": "medium"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_001",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e25",
+      "type": "Shipment Ready",
+      "time": "2024-01-22T16:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Logistics"
+        },
+        {
+          "name": "products",
+          "value": "Keyboard"
+        },
+        {
+          "name": "locations",
+          "value": "Hamburg"
+        },
+        {
+          "name": "urgency",
+          "value": "medium"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_001",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e26",
+      "type": "Shipment Ready",
+      "time": "2024-01-22T16:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Logistics"
+        },
+        {
+          "name": "products",
+          "value": "Keyboard"
+        },
+        {
+          "name": "locations",
+          "value": "Munich"
+        },
+        {
+          "name": "urgency",
+          "value": "medium"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_001",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e27",
+      "type": "Order Created",
+      "time": "2024-01-22T10:30:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Sales"
+        },
+        {
+          "name": "products",
+          "value": "Printer"
+        },
+        {
+          "name": "locations",
+          "value": "Frankfurt"
+        },
+        {
+          "name": "urgency",
+          "value": "low"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_002",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e28",
+      "type": "Items Verified",
+      "time": "2024-01-22T11:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Warehouse"
+        },
+        {
+          "name": "products",
+          "value": "Printer"
+        },
+        {
+          "name": "locations",
+          "value": "Frankfurt"
+        },
+        {
+          "name": "urgency",
+          "value": "low"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_002",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e29",
+      "type": "Order Cancelled",
+      "time": "2024-01-22T12:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Sales"
+        },
+        {
+          "name": "products",
+          "value": "Printer"
+        },
+        {
+          "name": "locations",
+          "value": "Frankfurt"
+        },
+        {
+          "name": "urgency",
+          "value": "low"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_002",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e30",
+      "type": "Order Cancelled",
+      "time": "2024-01-22T12:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Support"
+        },
+        {
+          "name": "products",
+          "value": "Printer"
+        },
+        {
+          "name": "locations",
+          "value": "Frankfurt"
+        },
+        {
+          "name": "urgency",
+          "value": "low"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_002",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e31",
+      "type": "Order Created",
+      "time": "2024-01-23T08:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Sales"
+        },
+        {
+          "name": "products",
+          "value": "Server"
+        },
+        {
+          "name": "locations",
+          "value": "Munich"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e32",
+      "type": "Order Created",
+      "time": "2024-01-23T08:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Sales"
+        },
+        {
+          "name": "products",
+          "value": "Router"
+        },
+        {
+          "name": "locations",
+          "value": "Munich"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e33",
+      "type": "Order Created",
+      "time": "2024-01-23T08:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Sales"
+        },
+        {
+          "name": "products",
+          "value": "Switch"
+        },
+        {
+          "name": "locations",
+          "value": "Munich"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e34",
+      "type": "Items Verified",
+      "time": "2024-01-23T08:30:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Warehouse"
+        },
+        {
+          "name": "products",
+          "value": "Server"
+        },
+        {
+          "name": "locations",
+          "value": "Munich"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e35",
+      "type": "Items Verified",
+      "time": "2024-01-23T08:30:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Warehouse"
+        },
+        {
+          "name": "products",
+          "value": "Server"
+        },
+        {
+          "name": "locations",
+          "value": "Stuttgart"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e36",
+      "type": "Items Verified",
+      "time": "2024-01-23T08:30:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Warehouse"
+        },
+        {
+          "name": "products",
+          "value": "Router"
+        },
+        {
+          "name": "locations",
+          "value": "Munich"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e37",
+      "type": "Items Verified",
+      "time": "2024-01-23T08:30:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Warehouse"
+        },
+        {
+          "name": "products",
+          "value": "Router"
+        },
+        {
+          "name": "locations",
+          "value": "Stuttgart"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e38",
+      "type": "Items Verified",
+      "time": "2024-01-23T08:30:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Warehouse"
+        },
+        {
+          "name": "products",
+          "value": "Switch"
+        },
+        {
+          "name": "locations",
+          "value": "Munich"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e39",
+      "type": "Items Verified",
+      "time": "2024-01-23T08:30:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Warehouse"
+        },
+        {
+          "name": "products",
+          "value": "Switch"
+        },
+        {
+          "name": "locations",
+          "value": "Stuttgart"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e40",
+      "type": "Items Verified",
+      "time": "2024-01-23T08:30:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "IT"
+        },
+        {
+          "name": "products",
+          "value": "Server"
+        },
+        {
+          "name": "locations",
+          "value": "Munich"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e41",
+      "type": "Items Verified",
+      "time": "2024-01-23T08:30:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "IT"
+        },
+        {
+          "name": "products",
+          "value": "Server"
+        },
+        {
+          "name": "locations",
+          "value": "Stuttgart"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e42",
+      "type": "Items Verified",
+      "time": "2024-01-23T08:30:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "IT"
+        },
+        {
+          "name": "products",
+          "value": "Router"
+        },
+        {
+          "name": "locations",
+          "value": "Munich"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e43",
+      "type": "Items Verified",
+      "time": "2024-01-23T08:30:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "IT"
+        },
+        {
+          "name": "products",
+          "value": "Router"
+        },
+        {
+          "name": "locations",
+          "value": "Stuttgart"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e44",
+      "type": "Items Verified",
+      "time": "2024-01-23T08:30:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "IT"
+        },
+        {
+          "name": "products",
+          "value": "Switch"
+        },
+        {
+          "name": "locations",
+          "value": "Munich"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e45",
+      "type": "Items Verified",
+      "time": "2024-01-23T08:30:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "IT"
+        },
+        {
+          "name": "products",
+          "value": "Switch"
+        },
+        {
+          "name": "locations",
+          "value": "Stuttgart"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e46",
+      "type": "Priority Handling",
+      "time": "2024-01-23T09:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Management"
+        },
+        {
+          "name": "products",
+          "value": "Server"
+        },
+        {
+          "name": "locations",
+          "value": "Munich"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e47",
+      "type": "Priority Handling",
+      "time": "2024-01-23T09:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Management"
+        },
+        {
+          "name": "products",
+          "value": "Router"
+        },
+        {
+          "name": "locations",
+          "value": "Munich"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e48",
+      "type": "Priority Handling",
+      "time": "2024-01-23T09:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Management"
+        },
+        {
+          "name": "products",
+          "value": "Switch"
+        },
+        {
+          "name": "locations",
+          "value": "Munich"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e49",
+      "type": "Priority Handling",
+      "time": "2024-01-23T09:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "IT"
+        },
+        {
+          "name": "products",
+          "value": "Server"
+        },
+        {
+          "name": "locations",
+          "value": "Munich"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e50",
+      "type": "Priority Handling",
+      "time": "2024-01-23T09:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "IT"
+        },
+        {
+          "name": "products",
+          "value": "Router"
+        },
+        {
+          "name": "locations",
+          "value": "Munich"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e51",
+      "type": "Priority Handling",
+      "time": "2024-01-23T09:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "IT"
+        },
+        {
+          "name": "products",
+          "value": "Switch"
+        },
+        {
+          "name": "locations",
+          "value": "Munich"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e52",
+      "type": "Payment Confirmed",
+      "time": "2024-01-23T10:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Finance"
+        },
+        {
+          "name": "products",
+          "value": "Server"
+        },
+        {
+          "name": "locations",
+          "value": "Munich"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e53",
+      "type": "Payment Confirmed",
+      "time": "2024-01-23T10:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Finance"
+        },
+        {
+          "name": "products",
+          "value": "Router"
+        },
+        {
+          "name": "locations",
+          "value": "Munich"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e54",
+      "type": "Payment Confirmed",
+      "time": "2024-01-23T10:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Finance"
+        },
+        {
+          "name": "products",
+          "value": "Switch"
+        },
+        {
+          "name": "locations",
+          "value": "Munich"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e55",
+      "type": "Express Delivery",
+      "time": "2024-01-23T11:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Logistics"
+        },
+        {
+          "name": "products",
+          "value": "Server"
+        },
+        {
+          "name": "locations",
+          "value": "Munich"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e56",
+      "type": "Express Delivery",
+      "time": "2024-01-23T11:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Logistics"
+        },
+        {
+          "name": "products",
+          "value": "Server"
+        },
+        {
+          "name": "locations",
+          "value": "Stuttgart"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e57",
+      "type": "Express Delivery",
+      "time": "2024-01-23T11:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Logistics"
+        },
+        {
+          "name": "products",
+          "value": "Server"
+        },
+        {
+          "name": "locations",
+          "value": "Berlin"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e58",
+      "type": "Express Delivery",
+      "time": "2024-01-23T11:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Logistics"
+        },
+        {
+          "name": "products",
+          "value": "Router"
+        },
+        {
+          "name": "locations",
+          "value": "Munich"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e59",
+      "type": "Express Delivery",
+      "time": "2024-01-23T11:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Logistics"
+        },
+        {
+          "name": "products",
+          "value": "Router"
+        },
+        {
+          "name": "locations",
+          "value": "Stuttgart"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e60",
+      "type": "Express Delivery",
+      "time": "2024-01-23T11:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Logistics"
+        },
+        {
+          "name": "products",
+          "value": "Router"
+        },
+        {
+          "name": "locations",
+          "value": "Berlin"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e61",
+      "type": "Express Delivery",
+      "time": "2024-01-23T11:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Logistics"
+        },
+        {
+          "name": "products",
+          "value": "Switch"
+        },
+        {
+          "name": "locations",
+          "value": "Munich"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e62",
+      "type": "Express Delivery",
+      "time": "2024-01-23T11:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Logistics"
+        },
+        {
+          "name": "products",
+          "value": "Switch"
+        },
+        {
+          "name": "locations",
+          "value": "Stuttgart"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e63",
+      "type": "Express Delivery",
+      "time": "2024-01-23T11:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Logistics"
+        },
+        {
+          "name": "products",
+          "value": "Switch"
+        },
+        {
+          "name": "locations",
+          "value": "Berlin"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e64",
+      "type": "Express Delivery",
+      "time": "2024-01-23T11:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Management"
+        },
+        {
+          "name": "products",
+          "value": "Server"
+        },
+        {
+          "name": "locations",
+          "value": "Munich"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e65",
+      "type": "Express Delivery",
+      "time": "2024-01-23T11:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Management"
+        },
+        {
+          "name": "products",
+          "value": "Server"
+        },
+        {
+          "name": "locations",
+          "value": "Stuttgart"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e66",
+      "type": "Express Delivery",
+      "time": "2024-01-23T11:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Management"
+        },
+        {
+          "name": "products",
+          "value": "Server"
+        },
+        {
+          "name": "locations",
+          "value": "Berlin"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e67",
+      "type": "Express Delivery",
+      "time": "2024-01-23T11:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Management"
+        },
+        {
+          "name": "products",
+          "value": "Router"
+        },
+        {
+          "name": "locations",
+          "value": "Munich"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e68",
+      "type": "Express Delivery",
+      "time": "2024-01-23T11:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Management"
+        },
+        {
+          "name": "products",
+          "value": "Router"
+        },
+        {
+          "name": "locations",
+          "value": "Stuttgart"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e69",
+      "type": "Express Delivery",
+      "time": "2024-01-23T11:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Management"
+        },
+        {
+          "name": "products",
+          "value": "Router"
+        },
+        {
+          "name": "locations",
+          "value": "Berlin"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e70",
+      "type": "Express Delivery",
+      "time": "2024-01-23T11:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Management"
+        },
+        {
+          "name": "products",
+          "value": "Switch"
+        },
+        {
+          "name": "locations",
+          "value": "Munich"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e71",
+      "type": "Express Delivery",
+      "time": "2024-01-23T11:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Management"
+        },
+        {
+          "name": "products",
+          "value": "Switch"
+        },
+        {
+          "name": "locations",
+          "value": "Stuttgart"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e72",
+      "type": "Express Delivery",
+      "time": "2024-01-23T11:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Management"
+        },
+        {
+          "name": "products",
+          "value": "Switch"
+        },
+        {
+          "name": "locations",
+          "value": "Berlin"
+        },
+        {
+          "name": "urgency",
+          "value": "urgent"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_003",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e73",
+      "type": "Order Created",
+      "time": "2024-01-23T13:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Sales"
+        },
+        {
+          "name": "products",
+          "value": "Mouse"
+        },
+        {
+          "name": "locations",
+          "value": "Cologne"
+        },
+        {
+          "name": "urgency",
+          "value": "normal"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_004",
+          "qualifier": "case"
+        }
+      ]
+    },
+    {
+      "id": "e74",
+      "type": "Items Verified",
+      "time": "2024-01-23T14:00:00+00:00",
+      "attributes": [
+        {
+          "name": "assigned_teams",
+          "value": "Warehouse"
+        },
+        {
+          "name": "products",
+          "value": "Mouse"
+        },
+        {
+          "name": "locations",
+          "value": "Cologne"
+        },
+        {
+          "name": "urgency",
+          "value": "normal"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_PO_004",
+          "qualifier": "case"
+        }
+      ]
+    }
+  ],
+  "objectRelations": []
+}

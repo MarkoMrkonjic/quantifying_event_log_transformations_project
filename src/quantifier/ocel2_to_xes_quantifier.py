@@ -141,4 +141,4 @@ def print_quality_report(results: Dict):
     print(f"INFORMATIONSVERLUST: {results['loss_percentage']:.3f}%")
 
 if __name__ == "__main__":
-    ocel2_to_xes_quantifier('data/sample_data/ocel2_sample2.json', 'data/generated_data/ocel2_to_xes/xes_from_ocel22.xes')
+    ocel2_to_xes_quantifier('data/sample_data/ocel2_sample.json', 'data/generated_data/ocel2_to_xes/xes_from_ocel2.xes')

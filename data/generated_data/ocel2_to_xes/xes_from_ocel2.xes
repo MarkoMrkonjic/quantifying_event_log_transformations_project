@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<log xes.version="1849-2016" xes.features="nested-attributes" xmlns="http://www.xes-standard.org/">
+	<extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext" />
+	<extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext" />
+	<string key="origin" value="csv" />
+	<trace>
+		<string key="concept:name" value="item_book" />
+		<string key="ocel:type" value="item" />
+		<float key="priority" value="nan" />
+		<float key="total_value" value="nan" />
+		<string key="category" value="books" />
+		<float key="weight" value="0.5" />
+		<float key="department" value="nan" />
+		<float key="experience_level" value="nan" />
+		<float key="region" value="nan" />
+		<float key="vip_status" value="nan" />
+		<event>
+			<string key="ocel:eid" value="e2" />
+			<date key="time:timestamp" value="2024-01-15T08:30:00+00:00" />
+			<string key="concept:name" value="Add Items" />
+			<float key="channel" value="nan" />
+			<float key="urgency" value="nan" />
+			<float key="quantity" value="3.0" />
+			<float key="batch_size" value="1.0" />
+			<float key="result" value="nan" />
+			<float key="duration_minutes" value="nan" />
+			<float key="carrier" value="nan" />
+			<float key="tracking_number" value="nan" />
+		</event>
+		<event>
+			<string key="ocel:eid" value="e3" />
+			<date key="time:timestamp" value="2024-01-15T11:00:00+00:00" />
+			<string key="concept:name" value="Quality Check" />
+			<float key="channel" value="nan" />
+			<float key="urgency" value="nan" />
+			<float key="quantity" value="nan" />
+			<float key="batch_size" value="nan" />
+			<string key="result" value="passed" />
+			<float key="duration_minutes" value="15.5" />
+			<float key="carrier" value="nan" />
+			<float key="tracking_number" value="nan" />
+		</event>
+		<event>
+			<string key="ocel:eid" value="e4" />
+			<date key="time:timestamp" value="2024-01-16T13:00:00+00:00" />
+			<string key="concept:name" value="Ship Items" />
+			<float key="channel" value="nan" />
+			<float key="urgency" value="nan" />
+			<float key="quantity" value="nan" />
+			<float key="batch_size" value="nan" />
+			<float key="result" value="nan" />
+			<float key="duration_minutes" value="nan" />
+			<string key="carrier" value="DHL" />
+			<string key="tracking_number" value="DHL123456789" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="item_pen" />
+		<string key="ocel:type" value="item" />
+		<float key="priority" value="nan" />
+		<float key="total_value" value="nan" />
+		<string key="category" value="office" />
+		<float key="weight" value="0.1" />
+		<float key="department" value="nan" />
+		<float key="experience_level" value="nan" />
+		<float key="region" value="nan" />
+		<float key="vip_status" value="nan" />
+		<event>
+			<string key="ocel:eid" value="e2" />
+			<date key="time:timestamp" value="2024-01-15T08:30:00+00:00" />
+			<string key="concept:name" value="Add Items" />
+			<float key="channel" value="nan" />
+			<float key="urgency" value="nan" />
+			<float key="quantity" value="3.0" />
+			<float key="batch_size" value="1.0" />
+			<float key="result" value="nan" />
+			<float key="duration_minutes" value="nan" />
+			<float key="carrier" value="nan" />
+			<float key="tracking_number" value="nan" />
+		</event>
+		<event>
+			<string key="ocel:eid" value="e3" />
+			<date key="time:timestamp" value="2024-01-15T11:00:00+00:00" />
+			<string key="concept:name" value="Quality Check" />
+			<float key="channel" value="nan" />
+			<float key="urgency" value="nan" />
+			<float key="quantity" value="nan" />
+			<float key="batch_size" value="nan" />
+			<string key="result" value="passed" />
+			<float key="duration_minutes" value="15.5" />
+			<float key="carrier" value="nan" />
+			<float key="tracking_number" value="nan" />
+		</event>
+		<event>
+			<string key="ocel:eid" value="e4" />
+			<date key="time:timestamp" value="2024-01-16T13:00:00+00:00" />
+			<string key="concept:name" value="Ship Items" />
+			<float key="channel" value="nan" />
+			<float key="urgency" value="nan" />
+			<float key="quantity" value="nan" />
+			<float key="batch_size" value="nan" />
+			<float key="result" value="nan" />
+			<float key="duration_minutes" value="nan" />
+			<string key="carrier" value="DHL" />
+			<string key="tracking_number" value="DHL123456789" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="item_smartphone" />
+		<string key="ocel:type" value="item" />
+		<float key="priority" value="nan" />
+		<float key="total_value" value="nan" />
+		<string key="category" value="electronics" />
+		<float key="weight" value="0.2" />
+		<float key="department" value="nan" />
+		<float key="experience_level" value="nan" />
+		<float key="region" value="nan" />
+		<float key="vip_status" value="nan" />
+		<event>
+			<string key="ocel:eid" value="e2" />
+			<date key="time:timestamp" value="2024-01-15T08:30:00+00:00" />
+			<string key="concept:name" value="Add Items" />
+			<float key="channel" value="nan" />
+			<float key="urgency" value="nan" />
+			<float key="quantity" value="3.0" />
+			<float key="batch_size" value="1.0" />
+			<float key="result" value="nan" />
+			<float key="duration_minutes" value="nan" />
+			<float key="carrier" value="nan" />
+			<float key="tracking_number" value="nan" />
+		</event>
+		<event>
+			<string key="ocel:eid" value="e4" />
+			<date key="time:timestamp" value="2024-01-16T13:00:00+00:00" />
+			<string key="concept:name" value="Ship Items" />
+			<float key="channel" value="nan" />
+			<float key="urgency" value="nan" />
+			<float key="quantity" value="nan" />
+			<float key="batch_size" value="nan" />
+			<float key="result" value="nan" />
+			<float key="duration_minutes" value="nan" />
+			<string key="carrier" value="DHL" />
+			<string key="tracking_number" value="DHL123456789" />
+		</event>
+	</trace>
+</log>

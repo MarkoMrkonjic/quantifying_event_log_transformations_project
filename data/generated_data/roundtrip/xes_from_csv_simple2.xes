@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<log xes.version="1849-2016" xes.features="nested-attributes" xmlns="http://www.xes-standard.org/">
+	<extension name="Organizational" prefix="org" uri="http://www.xes-standard.org/org.xesext" />
+	<extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext" />
+	<extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext" />
+	<string key="origin" value="csv" />
+	<trace>
+		<string key="concept:name" value="Order_A" />
+		<event>
+			<string key="concept:name" value="Receive Order" />
+			<date key="time:timestamp" value="2024-01-18T08:00:00" />
+			<string key="org:resource" value="Anna" />
+			<string key="department" value="Sales" />
+			<string key="priority" value="high" />
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Stock" />
+			<date key="time:timestamp" value="2024-01-18T08:30:00" />
+			<string key="org:resource" value="System" />
+			<string key="department" value="IT" />
+			<string key="priority" value="high" />
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare Invoice" />
+			<date key="time:timestamp" value="2024-01-18T09:15:00" />
+			<string key="org:resource" value="Anna" />
+			<string key="department" value="Sales" />
+			<string key="priority" value="high" />
+		</event>
+		<event>
+			<string key="concept:name" value="Send Invoice" />
+			<date key="time:timestamp" value="2024-01-18T10:00:00" />
+			<string key="org:resource" value="Anna" />
+			<string key="department" value="Sales" />
+			<string key="priority" value="high" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Order_B" />
+		<event>
+			<string key="concept:name" value="Receive Order" />
+			<date key="time:timestamp" value="2024-01-18T09:00:00" />
+			<string key="org:resource" value="Ben" />
+			<string key="department" value="Sales" />
+			<string key="priority" value="normal" />
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Stock" />
+			<date key="time:timestamp" value="2024-01-18T09:20:00" />
+			<string key="org:resource" value="System" />
+			<string key="department" value="IT" />
+			<string key="priority" value="normal" />
+		</event>
+		<event>
+			<string key="concept:name" value="Reject Order" />
+			<date key="time:timestamp" value="2024-01-18T09:45:00" />
+			<string key="org:resource" value="Ben" />
+			<string key="department" value="Sales" />
+			<string key="priority" value="normal" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Order_C" />
+		<event>
+			<string key="concept:name" value="Receive Order" />
+			<date key="time:timestamp" value="2024-01-18T11:00:00" />
+			<string key="org:resource" value="Anna" />
+			<string key="department" value="Sales" />
+			<string key="priority" value="low" />
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Stock" />
+			<date key="time:timestamp" value="2024-01-18T11:30:00" />
+			<string key="org:resource" value="System" />
+			<string key="department" value="IT" />
+			<string key="priority" value="low" />
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare Invoice" />
+			<date key="time:timestamp" value="2024-01-18T13:00:00" />
+			<string key="org:resource" value="Clara" />
+			<string key="department" value="Finance" />
+			<string key="priority" value="low" />
+		</event>
+	</trace>
+</log>

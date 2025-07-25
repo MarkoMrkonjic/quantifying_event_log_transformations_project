@@ -1,0 +1,18 @@
+case_id,activity,timestamp,item,cost
+case_Order_001,Create Order,2024-01-15 08:00:00+00:00,,
+case_Order_001,Add Item,2024-01-15 08:30:00+00:00,book,20.0
+case_Order_002,Create Order,2024-01-15 09:00:00+00:00,,
+case_Order_002,Add Item,2024-01-15 09:30:00+00:00,TV,800.0
+case_Order_003,Create Order,2024-01-15 10:00:00+00:00,,
+case_Order_003,Add Item,2024-01-15 10:30:00+00:00,smartphone,1400.0
+case_Order_003,Add Item,2024-01-15 10:30:00+00:00,headphones,1400.0
+case_Order_001,Quality Check,2024-01-15 11:00:00+00:00,book,20.0
+case_Order_002,Quality Check,2024-01-15 11:00:00+00:00,TV,800.0
+case_Order_003,Quality Check,2024-01-15 11:00:00+00:00,smartphone,1400.0
+case_Order_003,Quality Check,2024-01-15 11:00:00+00:00,headphones,1400.0
+case_SYSTEM,System Maintenance,2024-01-16 00:00:00+00:00,,
+case_Order_001,Ship Package,2024-01-16 13:00:00+00:00,book,20.0
+case_Order_002,Ship Package,2024-01-16 13:30:00+00:00, TV,800.0
+case_Order_002,Ship Package,2024-01-16 13:30:00+00:00, TV,800.0
+case_Order_003,Ship Package,2024-01-16 14:00:00+00:00,smartphone,1400.0
+case_Order_003,Ship Package,2024-01-16 14:00:00+00:00,headphones,1400.0

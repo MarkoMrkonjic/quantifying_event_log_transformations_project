@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<log xes.version="1849-2016" xes.features="nested-attributes" xmlns="http://www.xes-standard.org/">
+	<extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext" />
+	<extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext" />
+	<string key="origin" value="csv" />
+	<trace>
+		<string key="concept:name" value="order_101" />
+		<string key="ocel:type" value="order" />
+		<string key="status" value="new" />
+		<float key="value" value="299.99" />
+		<float key="name" value="nan" />
+		<float key="price" value="nan" />
+		<float key="role" value="nan" />
+		<float key="shift" value="nan" />
+		<event>
+			<string key="ocel:eid" value="e1" />
+			<date key="time:timestamp" value="2024-01-20T08:30:00+00:00" />
+			<string key="concept:name" value="Order Placed" />
+			<string key="source" value="website" />
+			<float key="quantity" value="nan" />
+			<float key="method" value="nan" />
+			<float key="success" value="nan" />
+			<float key="packaging_type" value="nan" />
+			<float key="service" value="nan" />
+		</event>
+		<event>
+			<string key="ocel:eid" value="e2" />
+			<date key="time:timestamp" value="2024-01-20T08:35:00+00:00" />
+			<string key="concept:name" value="Item Added" />
+			<float key="source" value="nan" />
+			<float key="quantity" value="1.0" />
+			<float key="method" value="nan" />
+			<float key="success" value="nan" />
+			<float key="packaging_type" value="nan" />
+			<float key="service" value="nan" />
+		</event>
+		<event>
+			<string key="ocel:eid" value="e3" />
+			<date key="time:timestamp" value="2024-01-20T08:40:00+00:00" />
+			<string key="concept:name" value="Item Added" />
+			<float key="source" value="nan" />
+			<float key="quantity" value="2.0" />
+			<float key="method" value="nan" />
+			<float key="success" value="nan" />
+			<float key="packaging_type" value="nan" />
+			<float key="service" value="nan" />
+		</event>
+		<event>
+			<string key="ocel:eid" value="e4" />
+			<date key="time:timestamp" value="2024-01-20T09:00:00+00:00" />
+			<string key="concept:name" value="Payment Processed" />
+			<float key="source" value="nan" />
+			<float key="quantity" value="nan" />
+			<string key="method" value="credit_card" />
+			<boolean key="success" value="true" />
+			<float key="packaging_type" value="nan" />
+			<float key="service" value="nan" />
+		</event>
+		<event>
+			<string key="ocel:eid" value="e5" />
+			<date key="time:timestamp" value="2024-01-20T15:00:00+00:00" />
+			<string key="concept:name" value="Order Packed" />
+			<float key="source" value="nan" />
+			<float key="quantity" value="nan" />
+			<float key="method" value="nan" />
+			<float key="success" value="nan" />
+			<string key="packaging_type" value="standard_box" />
+			<float key="service" value="nan" />
+		</event>
+		<event>
+			<string key="ocel:eid" value="e6" />
+			<date key="time:timestamp" value="2024-01-21T10:00:00+00:00" />
+			<string key="concept:name" value="Order Shipped" />
+			<float key="source" value="nan" />
+			<float key="quantity" value="nan" />
+			<float key="method" value="nan" />
+			<float key="success" value="nan" />
+			<float key="packaging_type" value="nan" />
+			<string key="service" value="FedEx" />
+		</event>
+	</trace>
+</log>

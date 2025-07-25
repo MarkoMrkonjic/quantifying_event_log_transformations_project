@@ -1,0 +1,521 @@
+{
+  "objectTypes": [
+    {
+      "name": "case",
+      "attributes": []
+    },
+    {
+      "name": "resource",
+      "attributes": []
+    }
+  ],
+  "eventTypes": [
+    {
+      "name": "Create Order",
+      "attributes": []
+    },
+    {
+      "name": "Add Item",
+      "attributes": [
+        {
+          "name": "item",
+          "type": "string"
+        },
+        {
+          "name": "cost",
+          "type": "float"
+        }
+      ]
+    },
+    {
+      "name": "Quality Check",
+      "attributes": [
+        {
+          "name": "item",
+          "type": "string"
+        },
+        {
+          "name": "cost",
+          "type": "float"
+        }
+      ]
+    },
+    {
+      "name": "Ship Package",
+      "attributes": [
+        {
+          "name": "item",
+          "type": "string"
+        },
+        {
+          "name": "cost",
+          "type": "float"
+        }
+      ]
+    },
+    {
+      "name": "System Maintenance",
+      "attributes": []
+    }
+  ],
+  "objects": [
+    {
+      "id": "resource_Alice",
+      "type": "resource",
+      "attributes": [],
+      "relationships": []
+    },
+    {
+      "id": "resource_Daniel",
+      "type": "resource",
+      "attributes": [],
+      "relationships": []
+    },
+    {
+      "id": "resource_Eve",
+      "type": "resource",
+      "attributes": [],
+      "relationships": []
+    },
+    {
+      "id": "resource_Bob",
+      "type": "resource",
+      "attributes": [],
+      "relationships": []
+    },
+    {
+      "id": "resource_Felix",
+      "type": "resource",
+      "attributes": [],
+      "relationships": []
+    },
+    {
+      "id": "resource_Charlie",
+      "type": "resource",
+      "attributes": [],
+      "relationships": []
+    },
+    {
+      "id": "resource_System",
+      "type": "resource",
+      "attributes": [],
+      "relationships": []
+    },
+    {
+      "id": "case_Order_001",
+      "type": "case",
+      "attributes": [],
+      "relationships": []
+    },
+    {
+      "id": "case_Order_002",
+      "type": "case",
+      "attributes": [],
+      "relationships": []
+    },
+    {
+      "id": "case_Order_003",
+      "type": "case",
+      "attributes": [],
+      "relationships": []
+    },
+    {
+      "id": "case_SYSTEM",
+      "type": "case",
+      "attributes": [],
+      "relationships": []
+    }
+  ],
+  "events": [
+    {
+      "id": "e0",
+      "type": "Create Order",
+      "time": "2024-01-15T08:00:00+00:00",
+      "attributes": [],
+      "relationships": [
+        {
+          "objectId": "case_Order_001",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Alice",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e1",
+      "type": "Add Item",
+      "time": "2024-01-15T08:30:00+00:00",
+      "attributes": [
+        {
+          "name": "item",
+          "value": "book"
+        },
+        {
+          "name": "cost",
+          "value": 20.0
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Order_001",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Alice",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e2",
+      "type": "Quality Check",
+      "time": "2024-01-15T11:00:00+00:00",
+      "attributes": [
+        {
+          "name": "item",
+          "value": "book"
+        },
+        {
+          "name": "cost",
+          "value": 20.0
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Order_001",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Daniel",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e3",
+      "type": "Ship Package",
+      "time": "2024-01-16T13:00:00+00:00",
+      "attributes": [
+        {
+          "name": "item",
+          "value": "book"
+        },
+        {
+          "name": "cost",
+          "value": 20.0
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Order_001",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Eve",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e4",
+      "type": "Create Order",
+      "time": "2024-01-15T09:00:00+00:00",
+      "attributes": [],
+      "relationships": [
+        {
+          "objectId": "case_Order_002",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Bob",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e5",
+      "type": "Add Item",
+      "time": "2024-01-15T09:30:00+00:00",
+      "attributes": [
+        {
+          "name": "item",
+          "value": "TV"
+        },
+        {
+          "name": "cost",
+          "value": 800.0
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Order_002",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Bob",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e6",
+      "type": "Quality Check",
+      "time": "2024-01-15T11:00:00+00:00",
+      "attributes": [
+        {
+          "name": "item",
+          "value": "TV"
+        },
+        {
+          "name": "cost",
+          "value": 800.0
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Order_002",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Daniel",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e7",
+      "type": "Ship Package",
+      "time": "2024-01-16T13:30:00+00:00",
+      "attributes": [
+        {
+          "name": "item",
+          "value": " TV"
+        },
+        {
+          "name": "cost",
+          "value": 800.0
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Order_002",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Eve",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e8",
+      "type": "Ship Package",
+      "time": "2024-01-16T13:30:00+00:00",
+      "attributes": [
+        {
+          "name": "item",
+          "value": " TV"
+        },
+        {
+          "name": "cost",
+          "value": 800.0
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Order_002",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Felix",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e9",
+      "type": "Create Order",
+      "time": "2024-01-15T10:00:00+00:00",
+      "attributes": [],
+      "relationships": [
+        {
+          "objectId": "case_Order_003",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Charlie",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e10",
+      "type": "Add Item",
+      "time": "2024-01-15T10:30:00+00:00",
+      "attributes": [
+        {
+          "name": "item",
+          "value": "smartphone"
+        },
+        {
+          "name": "cost",
+          "value": 1400.0
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Order_003",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Charlie",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e11",
+      "type": "Add Item",
+      "time": "2024-01-15T10:30:00+00:00",
+      "attributes": [
+        {
+          "name": "item",
+          "value": "headphones"
+        },
+        {
+          "name": "cost",
+          "value": 1400.0
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Order_003",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Charlie",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e12",
+      "type": "Quality Check",
+      "time": "2024-01-15T11:00:00+00:00",
+      "attributes": [
+        {
+          "name": "item",
+          "value": "smartphone"
+        },
+        {
+          "name": "cost",
+          "value": 1400.0
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Order_003",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Daniel",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e13",
+      "type": "Quality Check",
+      "time": "2024-01-15T11:00:00+00:00",
+      "attributes": [
+        {
+          "name": "item",
+          "value": "headphones"
+        },
+        {
+          "name": "cost",
+          "value": 1400.0
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Order_003",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Daniel",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e14",
+      "type": "Ship Package",
+      "time": "2024-01-16T14:00:00+00:00",
+      "attributes": [
+        {
+          "name": "item",
+          "value": "smartphone"
+        },
+        {
+          "name": "cost",
+          "value": 1400.0
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Order_003",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Eve",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e15",
+      "type": "Ship Package",
+      "time": "2024-01-16T14:00:00+00:00",
+      "attributes": [
+        {
+          "name": "item",
+          "value": "headphones"
+        },
+        {
+          "name": "cost",
+          "value": 1400.0
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Order_003",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Eve",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e16",
+      "type": "System Maintenance",
+      "time": "2024-01-16T00:00:00+00:00",
+      "attributes": [],
+      "relationships": [
+        {
+          "objectId": "case_SYSTEM",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_System",
+          "qualifier": "resource"
+        }
+      ]
+    }
+  ],
+  "objectRelations": []
+}

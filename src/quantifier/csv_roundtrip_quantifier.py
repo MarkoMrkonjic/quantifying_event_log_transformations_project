@@ -249,4 +249,4 @@ def print_roundtrip_analysis(results: Dict):
     print(f"  Gesamtscore: {overall['overall_roundtrip_score']:.3f}") 
 
 if __name__ == "__main__":
-    csv_roundtrip_quantifier('data/sample_data/csv_sample_multi2.csv', 'data/generated_data/roundtrip/csv_from_ocel2_multi2.csv')
+    csv_roundtrip_quantifier('data/sample_data/csv_sample_simple.csv', 'data/generated_data/roundtrip/csv_from_ocel2_simple.csv')

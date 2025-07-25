@@ -38,4 +38,4 @@ def ocel2_to_csv(ocel2_path: str, csv_path: str):
     pd.DataFrame(csv_rows).to_csv(csv_path, index=False)
 
 if __name__ == "__main__":
-    ocel2_to_csv('data/generated_data/roundtrip/ocel2_from_xes_multi2.json', 'data/generated_data/roundtrip/csv_from_ocel2_multi2.csv')
+    ocel2_to_csv('data/generated_data/roundtrip/ocel2_from_xes_simple.json', 'data/generated_data/roundtrip/csv_from_ocel2_simple.csv')

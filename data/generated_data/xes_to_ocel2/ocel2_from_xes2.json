@@ -1,0 +1,495 @@
+{
+  "objectTypes": [
+    {
+      "name": "case",
+      "attributes": []
+    },
+    {
+      "name": "resource",
+      "attributes": []
+    }
+  ],
+  "eventTypes": [
+    {
+      "name": "Create Order",
+      "attributes": [
+        {
+          "name": "case:customer:type",
+          "type": "string"
+        },
+        {
+          "name": "priority",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "Validate Order",
+      "attributes": [
+        {
+          "name": "case:customer:type",
+          "type": "string"
+        },
+        {
+          "name": "priority",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "Process Payment",
+      "attributes": [
+        {
+          "name": "case:customer:type",
+          "type": "string"
+        },
+        {
+          "name": "priority",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "Ship Order",
+      "attributes": [
+        {
+          "name": "case:customer:type",
+          "type": "string"
+        },
+        {
+          "name": "priority",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "Cancel Order",
+      "attributes": [
+        {
+          "name": "case:customer:type",
+          "type": "string"
+        },
+        {
+          "name": "priority",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "Express Ship",
+      "attributes": [
+        {
+          "name": "case:customer:type",
+          "type": "string"
+        },
+        {
+          "name": "priority",
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "id": "resource_Alice",
+      "type": "resource",
+      "attributes": [],
+      "relationships": []
+    },
+    {
+      "id": "resource_System",
+      "type": "resource",
+      "attributes": [],
+      "relationships": []
+    },
+    {
+      "id": "resource_Charlie",
+      "type": "resource",
+      "attributes": [],
+      "relationships": []
+    },
+    {
+      "id": "resource_Bob",
+      "type": "resource",
+      "attributes": [],
+      "relationships": []
+    },
+    {
+      "id": "case_Case_001",
+      "type": "case",
+      "attributes": [],
+      "relationships": []
+    },
+    {
+      "id": "case_Case_002",
+      "type": "case",
+      "attributes": [],
+      "relationships": []
+    },
+    {
+      "id": "case_Case_003",
+      "type": "case",
+      "attributes": [],
+      "relationships": []
+    },
+    {
+      "id": "case_Case_004",
+      "type": "case",
+      "attributes": [],
+      "relationships": []
+    }
+  ],
+  "events": [
+    {
+      "id": "e0",
+      "type": "Create Order",
+      "time": "2024-01-15T09:00:00+00:00",
+      "attributes": [
+        {
+          "name": "priority",
+          "value": "high"
+        },
+        {
+          "name": "case:customer:type",
+          "value": "premium"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Case_001",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Alice",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e1",
+      "type": "Validate Order",
+      "time": "2024-01-15T09:10:00+00:00",
+      "attributes": [
+        {
+          "name": "priority",
+          "value": "high"
+        },
+        {
+          "name": "case:customer:type",
+          "value": "premium"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Case_001",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_System",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e2",
+      "type": "Process Payment",
+      "time": "2024-01-15T10:30:00+00:00",
+      "attributes": [
+        {
+          "name": "priority",
+          "value": "high"
+        },
+        {
+          "name": "case:customer:type",
+          "value": "premium"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Case_001",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Alice",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e3",
+      "type": "Ship Order",
+      "time": "2024-01-15T14:00:00+00:00",
+      "attributes": [
+        {
+          "name": "priority",
+          "value": "normal"
+        },
+        {
+          "name": "case:customer:type",
+          "value": "premium"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Case_001",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Charlie",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e4",
+      "type": "Create Order",
+      "time": "2024-01-15T10:00:00+00:00",
+      "attributes": [
+        {
+          "name": "priority",
+          "value": "normal"
+        },
+        {
+          "name": "case:customer:type",
+          "value": "regular"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Case_002",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Bob",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e5",
+      "type": "Validate Order",
+      "time": "2024-01-15T10:05:00+00:00",
+      "attributes": [
+        {
+          "name": "priority",
+          "value": "normal"
+        },
+        {
+          "name": "case:customer:type",
+          "value": "regular"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Case_002",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_System",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e6",
+      "type": "Cancel Order",
+      "time": "2024-01-15T10:45:00+00:00",
+      "attributes": [
+        {
+          "name": "priority",
+          "value": "normal"
+        },
+        {
+          "name": "case:customer:type",
+          "value": "regular"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Case_002",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Bob",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e7",
+      "type": "Create Order",
+      "time": "2024-01-16T08:30:00+00:00",
+      "attributes": [
+        {
+          "name": "priority",
+          "value": "urgent"
+        },
+        {
+          "name": "case:customer:type",
+          "value": "premium"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Case_003",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Alice",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e8",
+      "type": "Validate Order",
+      "time": "2024-01-16T08:35:00+00:00",
+      "attributes": [
+        {
+          "name": "priority",
+          "value": "urgent"
+        },
+        {
+          "name": "case:customer:type",
+          "value": "premium"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Case_003",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_System",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e9",
+      "type": "Process Payment",
+      "time": "2024-01-16T09:30:00+00:00",
+      "attributes": [
+        {
+          "name": "priority",
+          "value": "urgent"
+        },
+        {
+          "name": "case:customer:type",
+          "value": "premium"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Case_003",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Bob",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e10",
+      "type": "Express Ship",
+      "time": "2024-01-16T11:00:00+00:00",
+      "attributes": [
+        {
+          "name": "priority",
+          "value": "urgent"
+        },
+        {
+          "name": "case:customer:type",
+          "value": "premium"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Case_003",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Charlie",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e11",
+      "type": "Create Order",
+      "time": "2024-01-16T13:00:00+00:00",
+      "attributes": [
+        {
+          "name": "priority",
+          "value": "normal"
+        },
+        {
+          "name": "case:customer:type",
+          "value": "new"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Case_004",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Alice",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e12",
+      "type": "Validate Order",
+      "time": "2024-01-16T13:15:00+00:00",
+      "attributes": [
+        {
+          "name": "priority",
+          "value": "normal"
+        },
+        {
+          "name": "case:customer:type",
+          "value": "new"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Case_004",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_System",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e13",
+      "type": "Process Payment",
+      "time": "2024-01-16T14:00:00+00:00",
+      "attributes": [
+        {
+          "name": "priority",
+          "value": "normal"
+        },
+        {
+          "name": "case:customer:type",
+          "value": "new"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Case_004",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Alice",
+          "qualifier": "resource"
+        }
+      ]
+    }
+  ],
+  "objectRelations": []
+}

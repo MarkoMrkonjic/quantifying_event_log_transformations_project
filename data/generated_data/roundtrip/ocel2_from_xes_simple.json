@@ -1,0 +1,433 @@
+{
+  "objectTypes": [
+    {
+      "name": "case",
+      "attributes": []
+    },
+    {
+      "name": "resource",
+      "attributes": []
+    }
+  ],
+  "eventTypes": [
+    {
+      "name": "Create Order",
+      "attributes": [
+        {
+          "name": "cost",
+          "type": "integer"
+        },
+        {
+          "name": "status",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "Check Inventory",
+      "attributes": [
+        {
+          "name": "cost",
+          "type": "integer"
+        },
+        {
+          "name": "status",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "Process Payment",
+      "attributes": [
+        {
+          "name": "cost",
+          "type": "integer"
+        },
+        {
+          "name": "status",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "Ship Order",
+      "attributes": [
+        {
+          "name": "cost",
+          "type": "integer"
+        },
+        {
+          "name": "status",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "Cancel Order",
+      "attributes": [
+        {
+          "name": "cost",
+          "type": "integer"
+        },
+        {
+          "name": "status",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "Retry Payment",
+      "attributes": [
+        {
+          "name": "cost",
+          "type": "integer"
+        },
+        {
+          "name": "status",
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "id": "resource_Alice",
+      "type": "resource",
+      "attributes": [],
+      "relationships": []
+    },
+    {
+      "id": "resource_Bob",
+      "type": "resource",
+      "attributes": [],
+      "relationships": []
+    },
+    {
+      "id": "resource_Charlie",
+      "type": "resource",
+      "attributes": [],
+      "relationships": []
+    },
+    {
+      "id": "case_Case_001",
+      "type": "case",
+      "attributes": [],
+      "relationships": []
+    },
+    {
+      "id": "case_Case_002",
+      "type": "case",
+      "attributes": [],
+      "relationships": []
+    },
+    {
+      "id": "case_Case_003",
+      "type": "case",
+      "attributes": [],
+      "relationships": []
+    }
+  ],
+  "events": [
+    {
+      "id": "e0",
+      "type": "Create Order",
+      "time": "2024-01-15T09:00:00+00:00",
+      "attributes": [
+        {
+          "name": "cost",
+          "value": 50
+        },
+        {
+          "name": "status",
+          "value": "pending"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Case_001",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Alice",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e1",
+      "type": "Check Inventory",
+      "time": "2024-01-15T09:15:00+00:00",
+      "attributes": [
+        {
+          "name": "cost",
+          "value": 25
+        },
+        {
+          "name": "status",
+          "value": "completed"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Case_001",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Bob",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e2",
+      "type": "Process Payment",
+      "time": "2024-01-15T10:30:00+00:00",
+      "attributes": [
+        {
+          "name": "cost",
+          "value": 100
+        },
+        {
+          "name": "status",
+          "value": "completed"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Case_001",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Alice",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e3",
+      "type": "Ship Order",
+      "time": "2024-01-15T14:00:00+00:00",
+      "attributes": [
+        {
+          "name": "cost",
+          "value": 75
+        },
+        {
+          "name": "status",
+          "value": "completed"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Case_001",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Charlie",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e4",
+      "type": "Create Order",
+      "time": "2024-01-15T10:00:00+00:00",
+      "attributes": [
+        {
+          "name": "cost",
+          "value": 50
+        },
+        {
+          "name": "status",
+          "value": "pending"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Case_002",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Alice",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e5",
+      "type": "Check Inventory",
+      "time": "2024-01-15T10:20:00+00:00",
+      "attributes": [
+        {
+          "name": "cost",
+          "value": 25
+        },
+        {
+          "name": "status",
+          "value": "failed"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Case_002",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Bob",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e6",
+      "type": "Cancel Order",
+      "time": "2024-01-15T10:45:00+00:00",
+      "attributes": [
+        {
+          "name": "cost",
+          "value": 10
+        },
+        {
+          "name": "status",
+          "value": "completed"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Case_002",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Alice",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e7",
+      "type": "Create Order",
+      "time": "2024-01-16T08:30:00+00:00",
+      "attributes": [
+        {
+          "name": "cost",
+          "value": 50
+        },
+        {
+          "name": "status",
+          "value": "pending"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Case_003",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Bob",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e8",
+      "type": "Check Inventory",
+      "time": "2024-01-16T08:45:00+00:00",
+      "attributes": [
+        {
+          "name": "cost",
+          "value": 25
+        },
+        {
+          "name": "status",
+          "value": "completed"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Case_003",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Bob",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e9",
+      "type": "Process Payment",
+      "time": "2024-01-16T09:30:00+00:00",
+      "attributes": [
+        {
+          "name": "cost",
+          "value": 100
+        },
+        {
+          "name": "status",
+          "value": "failed"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Case_003",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Charlie",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e10",
+      "type": "Retry Payment",
+      "time": "2024-01-16T11:00:00+00:00",
+      "attributes": [
+        {
+          "name": "cost",
+          "value": 100
+        },
+        {
+          "name": "status",
+          "value": "completed"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Case_003",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Charlie",
+          "qualifier": "resource"
+        }
+      ]
+    },
+    {
+      "id": "e11",
+      "type": "Ship Order",
+      "time": "2024-01-16T15:30:00+00:00",
+      "attributes": [
+        {
+          "name": "cost",
+          "value": 75
+        },
+        {
+          "name": "status",
+          "value": "completed"
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "case_Case_003",
+          "qualifier": "case"
+        },
+        {
+          "objectId": "resource_Charlie",
+          "qualifier": "resource"
+        }
+      ]
+    }
+  ],
+  "objectRelations": []
+}

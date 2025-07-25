@@ -172,4 +172,4 @@ def xes_to_ocel2(xes_path, ocel_path,
         json.dump(ocel, f, indent=2, cls=NumpyEncoder)
 
 if __name__ == "__main__":
-    xes_to_ocel2('data/generated_data/roundtrip/xes_from_csv_multi2.xes', 'data/generated_data/roundtrip/ocel2_from_xes_multi2.json')
+    xes_to_ocel2('data/sample_data/xes_sample.xes', 'data/generated_data/xes_to_ocel2/ocel2_from_xes.json')

@@ -75,4 +75,4 @@ def csv_to_xes(csv_path: str, xes_path: str,
     return event_log
 
 if __name__ == '__main__':
-    csv_to_xes('data/sample_data/csv_sample_multi2.csv', 'data/generated_data/roundtrip/xes_from_csv_multi2.xes')
+    csv_to_xes('data/sample_data/csv_sample_simple.csv', 'data/generated_data/roundtrip/xes_from_csv_simple.xes')

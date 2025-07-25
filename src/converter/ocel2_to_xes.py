@@ -20,4 +20,4 @@ def ocel2_to_xes(ocel2_path: str, xes_path: str):
     print(f"Verwendeter Objekttyp als Case-Notion: {object_type}")
 
 if __name__ == "__main__":
-    ocel2_to_xes('data/sample_data/ocel2_sample2.json', 'data/generated_data/ocel2_to_xes/xes_from_ocel22.xes')
+    ocel2_to_xes('data/sample_data/ocel2_sample.json', 'data/generated_data/ocel2_to_xes/xes_from_ocel2.xes')

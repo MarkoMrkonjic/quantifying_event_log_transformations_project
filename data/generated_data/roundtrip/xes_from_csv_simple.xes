@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<log xes.version="1849-2016" xes.features="nested-attributes" xmlns="http://www.xes-standard.org/">
+	<extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext" />
+	<extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext" />
+	<extension name="Organizational" prefix="org" uri="http://www.xes-standard.org/org.xesext" />
+	<extension name="Cost" prefix="cost" uri="http://www.xes-standard.org/cost.xesext" />
+	<string key="origin" value="csv" />
+	<trace>
+		<string key="concept:name" value="Case_001" />
+		<event>
+			<string key="concept:name" value="Create Order" />
+			<date key="time:timestamp" value="2024-01-15T09:00:00" />
+			<string key="org:resource" value="Alice" />
+			<int key="cost" value="50" />
+			<string key="status" value="pending" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check Inventory" />
+			<date key="time:timestamp" value="2024-01-15T09:15:00" />
+			<string key="org:resource" value="Bob" />
+			<int key="cost" value="25" />
+			<string key="status" value="completed" />
+		</event>
+		<event>
+			<string key="concept:name" value="Process Payment" />
+			<date key="time:timestamp" value="2024-01-15T10:30:00" />
+			<string key="org:resource" value="Alice" />
+			<int key="cost" value="100" />
+			<string key="status" value="completed" />
+		</event>
+		<event>
+			<string key="concept:name" value="Ship Order" />
+			<date key="time:timestamp" value="2024-01-15T14:00:00" />
+			<string key="org:resource" value="Charlie" />
+			<int key="cost" value="75" />
+			<string key="status" value="completed" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_002" />
+		<event>
+			<string key="concept:name" value="Create Order" />
+			<date key="time:timestamp" value="2024-01-15T10:00:00" />
+			<string key="org:resource" value="Alice" />
+			<int key="cost" value="50" />
+			<string key="status" value="pending" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check Inventory" />
+			<date key="time:timestamp" value="2024-01-15T10:20:00" />
+			<string key="org:resource" value="Bob" />
+			<int key="cost" value="25" />
+			<string key="status" value="failed" />
+		</event>
+		<event>
+			<string key="concept:name" value="Cancel Order" />
+			<date key="time:timestamp" value="2024-01-15T10:45:00" />
+			<string key="org:resource" value="Alice" />
+			<int key="cost" value="10" />
+			<string key="status" value="completed" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_003" />
+		<event>
+			<string key="concept:name" value="Create Order" />
+			<date key="time:timestamp" value="2024-01-16T08:30:00" />
+			<string key="org:resource" value="Bob" />
+			<int key="cost" value="50" />
+			<string key="status" value="pending" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check Inventory" />
+			<date key="time:timestamp" value="2024-01-16T08:45:00" />
+			<string key="org:resource" value="Bob" />
+			<int key="cost" value="25" />
+			<string key="status" value="completed" />
+		</event>
+		<event>
+			<string key="concept:name" value="Process Payment" />
+			<date key="time:timestamp" value="2024-01-16T09:30:00" />
+			<string key="org:resource" value="Charlie" />
+			<int key="cost" value="100" />
+			<string key="status" value="failed" />
+		</event>
+		<event>
+			<string key="concept:name" value="Retry Payment" />
+			<date key="time:timestamp" value="2024-01-16T11:00:00" />
+			<string key="org:resource" value="Charlie" />
+			<int key="cost" value="100" />
+			<string key="status" value="completed" />
+		</event>
+		<event>
+			<string key="concept:name" value="Ship Order" />
+			<date key="time:timestamp" value="2024-01-16T15:30:00" />
+			<string key="org:resource" value="Charlie" />
+			<int key="cost" value="75" />
+			<string key="status" value="completed" />
+		</event>
+	</trace>
+</log>

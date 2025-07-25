@@ -144,4 +144,4 @@ def print_quality_report(results: Dict):
     print(f"\nGESAMTBEWERTUNG: {results['total_score']:.3f}")
 
 if __name__ == "__main__":
-    xes_to_ocel2_quantifier('data/sample_data/xes_sample2.xes','data/generated_data/xes_to_ocel2/ocel2_from_xes2.json')
+    xes_to_ocel2_quantifier('data/sample_data/xes_sample.xes','data/generated_data/xes_to_ocel2/ocel2_from_xes.json')

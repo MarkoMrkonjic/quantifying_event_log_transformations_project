@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<log xes.version="1849-2016" xes.features="nested-attributes" xmlns="http://www.xes-standard.org/">
+	<extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext" />
+	<extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext" />
+	<string key="origin" value="csv" />
+	<trace>
+		<string key="concept:name" value="PO_001" />
+		<event>
+			<string key="concept:name" value="Order Created" />
+			<date key="time:timestamp" value="2024-01-22T09:00:00" />
+			<string key="assigned_teams" value="Sales" />
+			<string key="products" value="Laptop" />
+			<string key="locations" value="Berlin" />
+			<string key="urgency" value="high" />
+		</event>
+		<event>
+			<string key="concept:name" value="Order Created" />
+			<date key="time:timestamp" value="2024-01-22T09:00:00" />
+			<string key="assigned_teams" value="Sales" />
+			<string key="products" value="Monitor" />
+			<string key="locations" value="Berlin" />
+			<string key="urgency" value="high" />
+		</event>
+		<event>
+			<string key="concept:name" value="Order Created" />
+			<date key="time:timestamp" value="2024-01-22T09:00:00" />
+			<string key="assigned_teams" value="Sales" />
+			<string key="products" value="Keyboard" />
+			<string key="locations" value="Berlin" />
+			<string key="urgency" value="high" />
+		</event>
+		<event>
+			<string key="concept:name" value="Order Created" />
+			<date key="time:timestamp" value="2024-01-22T09:00:00" />
+			<string key="assigned_teams" value="Support" />
+			<string key="products" value="Laptop" />
+			<string key="locations" value="Berlin" />
+			<string key="urgency" value="high" />
+		</event>
+		<event>
+			<string key="concept:name" value="Order Created" />
+			<date key="time:timestamp" value="2024-01-22T09:00:00" />
+			<string key="assigned_teams" value="Support" />
+			<string key="products" value="Monitor" />
+			<string key="locations" value="Berlin" />
+			<string key="urgency" value="high" />
+		</event>
+		<event>
+			<string key="concept:name" value="Order Created" />
+			<date key="time:timestamp" value="2024-01-22T09:00:00" />
+			<string key="assigned_teams" value="Support" />
+			<string key="products" value="Keyboard" />
+			<string key="locations" value="Berlin" />
+			<string key="urgency" value="high" />
+		</event>
+		<event>
+			<string key="concept:name" value="Items Verified" />
+			<date key="time:timestamp" value="2024-01-22T10:00:00" />
+			<string key="assigned_teams" value="Warehouse" />
+			<string key="products" value="Laptop" />
+			<string key="locations" value="Berlin" />
+			<string key="urgency" value="high" />
+		</event>
+		<event>
+			<string key="concept:name" value="Items Verified" />
+			<date key="time:timestamp" value="2024-01-22T10:00:00" />
+			<string key="assigned_teams" value="Warehouse" />
+			<string key="products" value="Laptop" />
+			<string key="locations" value="Hamburg" />
+			<string key="urgency" value="high" />
+		</event>
+		<event>
+			<string key="concept:name" value="Items Verified" />
+			<date key="time:timestamp" value="2024-01-22T10:00:00" />
+			<string key="assigned_teams" value="Warehouse" />
+			<string key="products" value="Monitor" />
+			<string key="locations" value="Berlin" />
+			<string key="urgency" value="high" />
+		</event>
+		<event>
+			<string key="concept:name" value="Items Verified" />
+			<date key="time:timestamp" value="2024-01-22T10:00:00" />
+			<string key="assigned_teams" value="Warehouse" />
+			<string key="products" value="Monitor" />
+			<string key="locations" value="Hamburg" />
+			<string key="urgency" value="high" />
+		</event>
+		<event>
+			<string key="concept:name" value="Items Verified" />
+			<date key="time:timestamp" value="2024-01-22T10:00:00" />
+			<string key="assigned_teams" value="Warehouse" />
+			<string key="products" value="Keyboard" />
+			<string key="locations" value="Berlin" />
+			<string key="urgency" value="high" />
+		</event>
+		<event>
+			<string key="concept:name" value="Items Verified" />
+			<date key="time:timestamp" value="2024-01-22T10:00:00" />
+			<string key="assigned_teams" value="Warehouse" />
+			<string key="products" value="Keyboard" />
+			<string key="locations" value="Hamburg" />
+			<string key="urgency" value="high" />
+		</event>
+		<event>
+			<string key="concept:name" value="Payment Confirmed" />
+			<date key="time:timestamp" value="2024-01-22T11:30:00" />
+			<string key="assigned_teams" value="Finance" />
+			<string key="products" value="Laptop" />
+			<string key="locations" value="Berlin" />
+			<string key="urgency" value="high" />
+		</event>
+		<event>
+			<string key="concept:name" value="Payment Confirmed" />
+			<date key="time:timestamp" value="2024-01-22T11:30:00" />
+			<string key="assigned_teams" value="Finance" />
+			<string key="products" value="Monitor" />
+			<string key="locations" value="Berlin" />
+			<string key="urgency" value="high" />
+		</event>
+		<event>
+			<string key="concept:name" value="Payment Confirmed" />
+			<date key="time:timestamp" value="2024-01-22T11:30:00" />
+			<string key="assigned_teams" value="Finance" />
+			<string key="products" value="Keyboard" />
+			<string key="locations" value="Berlin" />
+			<string key="urgency" value="high" />
+		</event>
+		<event>
+			<string key="concept:name" value="Items Packed" />
+			<date key="time:timestamp" value="2024-01-22T14:00:00" />
+			<string key="assigned_teams" value="Warehouse" />
+			<string key="products" value="Laptop" />
+			<string key="locations" value="Hamburg" />
+			<string key="urgency" value="medium" />
+		</event>
+		<event>
+			<string key="concept:name" value="Items Packed" />
+			<date key="time:timestamp" value="2024-01-22T14:00:00" />
+			<string key="assigned_teams" value="Warehouse" />
+			<string key="products" value="Monitor" />
+			<string key="locations" value="Hamburg" />
+			<string key="urgency" value="medium" />
+		</event>
+		<event>
+			<string key="concept:name" value="Items Packed" />
+			<date key="time:timestamp" value="2024-01-22T14:00:00" />
+			<string key="assigned_teams" value="Warehouse" />
+			<string key="products" value="Keyboard" />
+			<string key="locations" value="Hamburg" />
+			<string key="urgency" value="medium" />
+		</event>
+		<event>
+			<string key="concept:name" value="Items Packed" />
+			<date key="time:timestamp" value="2024-01-22T14:00:00" />
+			<string key="assigned_teams" value="Logistics" />
+			<string key="products" value="Laptop" />
+			<string key="locations" value="Hamburg" />
+			<string key="urgency" value="medium" />
+		</event>
+		<event>
+			<string key="concept:name" value="Items Packed" />
+			<date key="time:timestamp" value="2024-01-22T14:00:00" />
+			<string key="assigned_teams" value="Logistics" />
+			<string key="products" value="Monitor" />
+			<string key="locations" value="Hamburg" />
+			<string key="urgency" value="medium" />
+		</event>
+		<event>
+			<string key="concept:name" value="Items Packed" />
+			<date key="time:timestamp" value="2024-01-22T14:00:00" />
+			<string key="assigned_teams" value="Logistics" />
+			<string key="products" value="Keyboard" />
+			<string key="locations" value="Hamburg" />
+			<string key="urgency" value="medium" />
+		</event>
+		<event>
+			<string key="concept:name" value="Shipment Ready" />
+			<date key="time:timestamp" value="2024-01-22T16:00:00" />
+			<string key="assigned_teams" value="Logistics" />
+			<string key="products" value="Laptop" />
+			<string key="locations" value="Hamburg" />
+			<string key="urgency" value="medium" />
+		</event>
+		<event>
+			<string key="concept:name" value="Shipment Ready" />
+			<date key="time:timestamp" value="2024-01-22T16:00:00" />
+			<string key="assigned_teams" value="Logistics" />
+			<string key="products" value="Laptop" />
+			<string key="locations" value="Munich" />
+			<string key="urgency" value="medium" />
+		</event>
+		<event>
+			<string key="concept:name" value="Shipment Ready" />
+			<date key="time:timestamp" value="2024-01-22T16:00:00" />
+			<string key="assigned_teams" value="Logistics" />
+			<string key="products" value="Monitor" />
+			<string key="locations" value="Hamburg" />
+			<string key="urgency" value="medium" />
+		</event>
+		<event>
+			<string key="concept:name" value="Shipment Ready" />
+			<date key="time:timestamp" value="2024-01-22T16:00:00" />
+			<string key="assigned_teams" value="Logistics" />
+			<string key="products" value="Monitor" />
+			<string key="locations" value="Munich" />
+			<string key="urgency" value="medium" />
+		</event>
+		<event>
+			<string key="concept:name" value="Shipment Ready" />
+			<date key="time:timestamp" value="2024-01-22T16:00:00" />
+			<string key="assigned_teams" value="Logistics" />
+			<string key="products" value="Keyboard" />
+			<string key="locations" value="Hamburg" />
+			<string key="urgency" value="medium" />
+		</event>
+		<event>
+			<string key="concept:name" value="Shipment Ready" />
+			<date key="time:timestamp" value="2024-01-22T16:00:00" />
+			<string key="assigned_teams" value="Logistics" />
+			<string key="products" value="Keyboard" />
+			<string key="locations" value="Munich" />
+			<string key="urgency" value="medium" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="PO_002" />
+		<event>
+			<string key="concept:name" value="Order Created" />
+			<date key="time:timestamp" value="2024-01-22T10:30:00" />
+			<string key="assigned_teams" value="Sales" />
+			<string key="products" value="Printer" />
+			<string key="locations" value="Frankfurt" />
+			<string key="urgency" value="low" />
+		</event>
+		<event>
+			<string key="concept:name" value="Items Verified" />
+			<date key="time:timestamp" value="2024-01-22T11:00:00" />
+			<string key="assigned_teams" value="Warehouse" />
+			<string key="products" value="Printer" />
+			<string key="locations" value="Frankfurt" />
+			<string key="urgency" value="low" />
+		</event>
+		<event>
+			<string key="concept:name" value="Order Cancelled" />
+			<date key="time:timestamp" value="2024-01-22T12:00:00" />
+			<string key="assigned_teams" value="Sales" />
+			<string key="products" value="Printer" />
+			<string key="locations" value="Frankfurt" />
+			<string key="urgency" value="low" />
+		</event>
+		<event>
+			<string key="concept:name" value="Order Cancelled" />
+			<date key="time:timestamp" value="2024-01-22T12:00:00" />
+			<string key="assigned_teams" value="Support" />
+			<string key="products" value="Printer" />
+			<string key="locations" value="Frankfurt" />
+			<string key="urgency" value="low" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="PO_003" />
+		<event>
+			<string key="concept:name" value="Order Created" />
+			<date key="time:timestamp" value="2024-01-23T08:00:00" />
+			<string key="assigned_teams" value="Sales" />
+			<string key="products" value="Server" />
+			<string key="locations" value="Munich" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Order Created" />
+			<date key="time:timestamp" value="2024-01-23T08:00:00" />
+			<string key="assigned_teams" value="Sales" />
+			<string key="products" value="Router" />
+			<string key="locations" value="Munich" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Order Created" />
+			<date key="time:timestamp" value="2024-01-23T08:00:00" />
+			<string key="assigned_teams" value="Sales" />
+			<string key="products" value="Switch" />
+			<string key="locations" value="Munich" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Items Verified" />
+			<date key="time:timestamp" value="2024-01-23T08:30:00" />
+			<string key="assigned_teams" value="Warehouse" />
+			<string key="products" value="Server" />
+			<string key="locations" value="Munich" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Items Verified" />
+			<date key="time:timestamp" value="2024-01-23T08:30:00" />
+			<string key="assigned_teams" value="Warehouse" />
+			<string key="products" value="Server" />
+			<string key="locations" value="Stuttgart" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Items Verified" />
+			<date key="time:timestamp" value="2024-01-23T08:30:00" />
+			<string key="assigned_teams" value="Warehouse" />
+			<string key="products" value="Router" />
+			<string key="locations" value="Munich" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Items Verified" />
+			<date key="time:timestamp" value="2024-01-23T08:30:00" />
+			<string key="assigned_teams" value="Warehouse" />
+			<string key="products" value="Router" />
+			<string key="locations" value="Stuttgart" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Items Verified" />
+			<date key="time:timestamp" value="2024-01-23T08:30:00" />
+			<string key="assigned_teams" value="Warehouse" />
+			<string key="products" value="Switch" />
+			<string key="locations" value="Munich" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Items Verified" />
+			<date key="time:timestamp" value="2024-01-23T08:30:00" />
+			<string key="assigned_teams" value="Warehouse" />
+			<string key="products" value="Switch" />
+			<string key="locations" value="Stuttgart" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Items Verified" />
+			<date key="time:timestamp" value="2024-01-23T08:30:00" />
+			<string key="assigned_teams" value="IT" />
+			<string key="products" value="Server" />
+			<string key="locations" value="Munich" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Items Verified" />
+			<date key="time:timestamp" value="2024-01-23T08:30:00" />
+			<string key="assigned_teams" value="IT" />
+			<string key="products" value="Server" />
+			<string key="locations" value="Stuttgart" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Items Verified" />
+			<date key="time:timestamp" value="2024-01-23T08:30:00" />
+			<string key="assigned_teams" value="IT" />
+			<string key="products" value="Router" />
+			<string key="locations" value="Munich" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Items Verified" />
+			<date key="time:timestamp" value="2024-01-23T08:30:00" />
+			<string key="assigned_teams" value="IT" />
+			<string key="products" value="Router" />
+			<string key="locations" value="Stuttgart" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Items Verified" />
+			<date key="time:timestamp" value="2024-01-23T08:30:00" />
+			<string key="assigned_teams" value="IT" />
+			<string key="products" value="Switch" />
+			<string key="locations" value="Munich" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Items Verified" />
+			<date key="time:timestamp" value="2024-01-23T08:30:00" />
+			<string key="assigned_teams" value="IT" />
+			<string key="products" value="Switch" />
+			<string key="locations" value="Stuttgart" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Priority Handling" />
+			<date key="time:timestamp" value="2024-01-23T09:00:00" />
+			<string key="assigned_teams" value="Management" />
+			<string key="products" value="Server" />
+			<string key="locations" value="Munich" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Priority Handling" />
+			<date key="time:timestamp" value="2024-01-23T09:00:00" />
+			<string key="assigned_teams" value="Management" />
+			<string key="products" value="Router" />
+			<string key="locations" value="Munich" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Priority Handling" />
+			<date key="time:timestamp" value="2024-01-23T09:00:00" />
+			<string key="assigned_teams" value="Management" />
+			<string key="products" value="Switch" />
+			<string key="locations" value="Munich" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Priority Handling" />
+			<date key="time:timestamp" value="2024-01-23T09:00:00" />
+			<string key="assigned_teams" value="IT" />
+			<string key="products" value="Server" />
+			<string key="locations" value="Munich" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Priority Handling" />
+			<date key="time:timestamp" value="2024-01-23T09:00:00" />
+			<string key="assigned_teams" value="IT" />
+			<string key="products" value="Router" />
+			<string key="locations" value="Munich" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Priority Handling" />
+			<date key="time:timestamp" value="2024-01-23T09:00:00" />
+			<string key="assigned_teams" value="IT" />
+			<string key="products" value="Switch" />
+			<string key="locations" value="Munich" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Payment Confirmed" />
+			<date key="time:timestamp" value="2024-01-23T10:00:00" />
+			<string key="assigned_teams" value="Finance" />
+			<string key="products" value="Server" />
+			<string key="locations" value="Munich" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Payment Confirmed" />
+			<date key="time:timestamp" value="2024-01-23T10:00:00" />
+			<string key="assigned_teams" value="Finance" />
+			<string key="products" value="Router" />
+			<string key="locations" value="Munich" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Payment Confirmed" />
+			<date key="time:timestamp" value="2024-01-23T10:00:00" />
+			<string key="assigned_teams" value="Finance" />
+			<string key="products" value="Switch" />
+			<string key="locations" value="Munich" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Express Delivery" />
+			<date key="time:timestamp" value="2024-01-23T11:00:00" />
+			<string key="assigned_teams" value="Logistics" />
+			<string key="products" value="Server" />
+			<string key="locations" value="Munich" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Express Delivery" />
+			<date key="time:timestamp" value="2024-01-23T11:00:00" />
+			<string key="assigned_teams" value="Logistics" />
+			<string key="products" value="Server" />
+			<string key="locations" value="Stuttgart" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Express Delivery" />
+			<date key="time:timestamp" value="2024-01-23T11:00:00" />
+			<string key="assigned_teams" value="Logistics" />
+			<string key="products" value="Server" />
+			<string key="locations" value="Berlin" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Express Delivery" />
+			<date key="time:timestamp" value="2024-01-23T11:00:00" />
+			<string key="assigned_teams" value="Logistics" />
+			<string key="products" value="Router" />
+			<string key="locations" value="Munich" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Express Delivery" />
+			<date key="time:timestamp" value="2024-01-23T11:00:00" />
+			<string key="assigned_teams" value="Logistics" />
+			<string key="products" value="Router" />
+			<string key="locations" value="Stuttgart" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Express Delivery" />
+			<date key="time:timestamp" value="2024-01-23T11:00:00" />
+			<string key="assigned_teams" value="Logistics" />
+			<string key="products" value="Router" />
+			<string key="locations" value="Berlin" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Express Delivery" />
+			<date key="time:timestamp" value="2024-01-23T11:00:00" />
+			<string key="assigned_teams" value="Logistics" />
+			<string key="products" value="Switch" />
+			<string key="locations" value="Munich" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Express Delivery" />
+			<date key="time:timestamp" value="2024-01-23T11:00:00" />
+			<string key="assigned_teams" value="Logistics" />
+			<string key="products" value="Switch" />
+			<string key="locations" value="Stuttgart" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Express Delivery" />
+			<date key="time:timestamp" value="2024-01-23T11:00:00" />
+			<string key="assigned_teams" value="Logistics" />
+			<string key="products" value="Switch" />
+			<string key="locations" value="Berlin" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Express Delivery" />
+			<date key="time:timestamp" value="2024-01-23T11:00:00" />
+			<string key="assigned_teams" value="Management" />
+			<string key="products" value="Server" />
+			<string key="locations" value="Munich" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Express Delivery" />
+			<date key="time:timestamp" value="2024-01-23T11:00:00" />
+			<string key="assigned_teams" value="Management" />
+			<string key="products" value="Server" />
+			<string key="locations" value="Stuttgart" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Express Delivery" />
+			<date key="time:timestamp" value="2024-01-23T11:00:00" />
+			<string key="assigned_teams" value="Management" />
+			<string key="products" value="Server" />
+			<string key="locations" value="Berlin" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Express Delivery" />
+			<date key="time:timestamp" value="2024-01-23T11:00:00" />
+			<string key="assigned_teams" value="Management" />
+			<string key="products" value="Router" />
+			<string key="locations" value="Munich" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Express Delivery" />
+			<date key="time:timestamp" value="2024-01-23T11:00:00" />
+			<string key="assigned_teams" value="Management" />
+			<string key="products" value="Router" />
+			<string key="locations" value="Stuttgart" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Express Delivery" />
+			<date key="time:timestamp" value="2024-01-23T11:00:00" />
+			<string key="assigned_teams" value="Management" />
+			<string key="products" value="Router" />
+			<string key="locations" value="Berlin" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Express Delivery" />
+			<date key="time:timestamp" value="2024-01-23T11:00:00" />
+			<string key="assigned_teams" value="Management" />
+			<string key="products" value="Switch" />
+			<string key="locations" value="Munich" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Express Delivery" />
+			<date key="time:timestamp" value="2024-01-23T11:00:00" />
+			<string key="assigned_teams" value="Management" />
+			<string key="products" value="Switch" />
+			<string key="locations" value="Stuttgart" />
+			<string key="urgency" value="urgent" />
+		</event>
+		<event>
+			<string key="concept:name" value="Express Delivery" />
+			<date key="time:timestamp" value="2024-01-23T11:00:00" />
+			<string key="assigned_teams" value="Management" />
+			<string key="products" value="Switch" />
+			<string key="locations" value="Berlin" />
+			<string key="urgency" value="urgent" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="PO_004" />
+		<event>
+			<string key="concept:name" value="Order Created" />
+			<date key="time:timestamp" value="2024-01-23T13:00:00" />
+			<string key="assigned_teams" value="Sales" />
+			<string key="products" value="Mouse" />
+			<string key="locations" value="Cologne" />
+			<string key="urgency" value="normal" />
+		</event>
+		<event>
+			<string key="concept:name" value="Items Verified" />
+			<date key="time:timestamp" value="2024-01-23T14:00:00" />
+			<string key="assigned_teams" value="Warehouse" />
+			<string key="products" value="Mouse" />
+			<string key="locations" value="Cologne" />
+			<string key="urgency" value="normal" />
+		</event>
+	</trace>
+</log>

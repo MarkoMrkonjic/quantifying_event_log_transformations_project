@@ -1,0 +1,11 @@
+case_id,activity,timestamp,department,priority
+case_Order_A,Receive Order,2024-01-18 08:00:00+00:00,Sales,high
+case_Order_A,Verify Stock,2024-01-18 08:30:00+00:00,IT,high
+case_Order_B,Receive Order,2024-01-18 09:00:00+00:00,Sales,normal
+case_Order_A,Prepare Invoice,2024-01-18 09:15:00+00:00,Sales,high
+case_Order_B,Verify Stock,2024-01-18 09:20:00+00:00,IT,normal
+case_Order_B,Reject Order,2024-01-18 09:45:00+00:00,Sales,normal
+case_Order_A,Send Invoice,2024-01-18 10:00:00+00:00,Sales,high
+case_Order_C,Receive Order,2024-01-18 11:00:00+00:00,Sales,low
+case_Order_C,Verify Stock,2024-01-18 11:30:00+00:00,IT,low
+case_Order_C,Prepare Invoice,2024-01-18 13:00:00+00:00,Finance,low
