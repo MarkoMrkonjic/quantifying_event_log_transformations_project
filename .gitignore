@@ -4,6 +4,4 @@ __pycache__/
 venv/
 
 data/BPI_data/*.xes
-data/BPI_data/*.jsonocel
-
-data/generated_data/ 
+data/BPI_data/*.jsonocel 
