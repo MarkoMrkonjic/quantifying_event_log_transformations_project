@@ -1,0 +1,16 @@
+case_id,activity,timestamp,assigned_teams,products,locations,urgency
+PO_001,Order Created,2024-01-22 09:00:00,Sales;Support,Laptop;Monitor;Keyboard,Berlin,high
+PO_001,Items Verified,2024-01-22 10:00:00,Warehouse,Laptop;Monitor;Keyboard,Berlin;Hamburg,high
+PO_001,Payment Confirmed,2024-01-22 11:30:00,Finance,Laptop;Monitor;Keyboard,Berlin,high
+PO_001,Items Packed,2024-01-22 14:00:00,Warehouse;Logistics,Laptop;Monitor;Keyboard,Hamburg,medium
+PO_001,Shipment Ready,2024-01-22 16:00:00,Logistics,Laptop;Monitor;Keyboard,Hamburg;Munich,medium
+PO_002,Order Created,2024-01-22 10:30:00,Sales,Printer,Frankfurt,low
+PO_002,Items Verified,2024-01-22 11:00:00,Warehouse,Printer,Frankfurt,low
+PO_002,Order Cancelled,2024-01-22 12:00:00,Sales;Support,Printer,Frankfurt,low
+PO_003,Order Created,2024-01-23 08:00:00,Sales,Server;Router;Switch,Munich,urgent
+PO_003,Items Verified,2024-01-23 08:30:00,Warehouse;IT,Server;Router;Switch,Munich;Stuttgart,urgent
+PO_003,Priority Handling,2024-01-23 09:00:00,Management;IT,Server;Router;Switch,Munich,urgent
+PO_003,Payment Confirmed,2024-01-23 10:00:00,Finance,Server;Router;Switch,Munich,urgent
+PO_003,Express Delivery,2024-01-23 11:00:00,Logistics;Management,Server;Router;Switch,Munich;Stuttgart;Berlin,urgent
+PO_004,Order Created,2024-01-23 13:00:00,Sales,Mouse,Cologne,normal
+PO_004,Items Verified,2024-01-23 14:00:00,Warehouse,Mouse,Cologne,normal

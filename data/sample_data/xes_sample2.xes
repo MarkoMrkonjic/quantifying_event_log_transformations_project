@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<log xes.version="2.0" xes.features="nested-attributes">
+    <extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext" />
+    <extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext" />
+    <extension name="Organizational" prefix="org" uri="http://www.xes-standard.org/org.xesext" />
+    <global scope="trace">
+        <string key="concept:name" value="Order Process" />
+    </global>
+    <global scope="event">
+        <string key="concept:name" value="Activity" />
+        <date key="time:timestamp" value="2024-01-15T09:00:00.000+02:00" />
+        <string key="org:resource" value="Resource" />
+        <string key="priority" value="normal" />
+    </global>
+    
+    <classifier name="Activity" keys="concept:name" />
+    <classifier name="Resource" keys="org:resource" />
+    
+    <trace>
+        <string key="concept:name" value="Case_001" />
+        <string key="customer:type" value="premium" />
+        
+        <event>
+            <string key="concept:name" value="Create Order" />
+            <date key="time:timestamp" value="2024-01-15T09:00:00.000+02:00" />
+            <string key="org:resource" value="Alice" />
+            <string key="priority" value="high" />
+        </event>
+        
+        <event>
+            <string key="concept:name" value="Validate Order" />
+            <date key="time:timestamp" value="2024-01-15T09:10:00.000+02:00" />
+            <string key="org:resource" value="System" />
+            <string key="priority" value="high" />
+        </event>
+        
+        <event>
+            <string key="concept:name" value="Process Payment" />
+            <date key="time:timestamp" value="2024-01-15T10:30:00.000+02:00" />
+            <string key="org:resource" value="Alice" />
+            <string key="priority" value="high" />
+        </event>
+        
+        <event>
+            <string key="concept:name" value="Ship Order" />
+            <date key="time:timestamp" value="2024-01-15T14:00:00.000+02:00" />
+            <string key="org:resource" value="Charlie" />
+            <string key="priority" value="normal" />
+        </event>
+    </trace>
+    
+    <trace>
+        <string key="concept:name" value="Case_002" />
+        <string key="customer:type" value="regular" />
+        
+        <event>
+            <string key="concept:name" value="Create Order" />
+            <date key="time:timestamp" value="2024-01-15T10:00:00.000+02:00" />
+            <string key="org:resource" value="Bob" />
+            <string key="priority" value="normal" />
+        </event>
+        
+        <event>
+            <string key="concept:name" value="Validate Order" />
+            <date key="time:timestamp" value="2024-01-15T10:05:00.000+02:00" />
+            <string key="org:resource" value="System" />
+            <string key="priority" value="normal" />
+        </event>
+        
+        <event>
+            <string key="concept:name" value="Cancel Order" />
+            <date key="time:timestamp" value="2024-01-15T10:45:00.000+02:00" />
+            <string key="org:resource" value="Bob" />
+            <string key="priority" value="normal" />
+        </event>
+    </trace>
+    
+    <trace>
+        <string key="concept:name" value="Case_003" />
+        <string key="customer:type" value="premium" />
+        
+        <event>
+            <string key="concept:name" value="Create Order" />
+            <date key="time:timestamp" value="2024-01-16T08:30:00.000+02:00" />
+            <string key="org:resource" value="Alice" />
+            <string key="priority" value="urgent" />
+        </event>
+        
+        <event>
+            <string key="concept:name" value="Validate Order" />
+            <date key="time:timestamp" value="2024-01-16T08:35:00.000+02:00" />
+            <string key="org:resource" value="System" />
+            <string key="priority" value="urgent" />
+        </event>
+        
+        <event>
+            <string key="concept:name" value="Process Payment" />
+            <date key="time:timestamp" value="2024-01-16T09:30:00.000+02:00" />
+            <string key="org:resource" value="Bob" />
+            <string key="priority" value="urgent" />
+        </event>
+        
+        <event>
+            <string key="concept:name" value="Express Ship" />
+            <date key="time:timestamp" value="2024-01-16T11:00:00.000+02:00" />
+            <string key="org:resource" value="Charlie" />
+            <string key="priority" value="urgent" />
+        </event>
+    </trace>
+    
+    <trace>
+        <string key="concept:name" value="Case_004" />
+        <string key="customer:type" value="new" />
+        
+        <event>
+            <string key="concept:name" value="Create Order" />
+            <date key="time:timestamp" value="2024-01-16T13:00:00.000+02:00" />
+            <string key="org:resource" value="Alice" />
+            <string key="priority" value="normal" />
+        </event>
+        
+        <event>
+            <string key="concept:name" value="Validate Order" />
+            <date key="time:timestamp" value="2024-01-16T13:15:00.000+02:00" />
+            <string key="org:resource" value="System" />
+            <string key="priority" value="normal" />
+        </event>
+        
+        <event>
+            <string key="concept:name" value="Process Payment" />
+            <date key="time:timestamp" value="2024-01-16T14:00:00.000+02:00" />
+            <string key="org:resource" value="Alice" />
+            <string key="priority" value="normal" />
+        </event>
+    </trace>
+</log>

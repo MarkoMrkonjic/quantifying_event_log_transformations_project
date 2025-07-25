@@ -1,0 +1,13 @@
+case_id,activity,timestamp,resource,cost,status
+Case_001,Create Order,2024-01-15 09:00:00,Alice,50,pending
+Case_001,Check Inventory,2024-01-15 09:15:00,Bob,25,completed
+Case_001,Process Payment,2024-01-15 10:30:00,Alice,100,completed
+Case_001,Ship Order,2024-01-15 14:00:00,Charlie,75,completed
+Case_002,Create Order,2024-01-15 10:00:00,Alice,50,pending
+Case_002,Check Inventory,2024-01-15 10:20:00,Bob,25,failed
+Case_002,Cancel Order,2024-01-15 10:45:00,Alice,10,completed
+Case_003,Create Order,2024-01-16 08:30:00,Bob,50,pending
+Case_003,Check Inventory,2024-01-16 08:45:00,Bob,25,completed
+Case_003,Process Payment,2024-01-16 09:30:00,Charlie,100,failed
+Case_003,Retry Payment,2024-01-16 11:00:00,Charlie,100,completed
+Case_003,Ship Order,2024-01-16 15:30:00,Charlie,75,completed

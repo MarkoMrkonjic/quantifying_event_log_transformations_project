@@ -1,0 +1,14 @@
+case_id,activity,timestamp,resource,item,cost
+Order_001,Create Order,2024-01-15 08:00:00,Alice,,
+Order_001,Add Item,2024-01-15 08:30:00,Alice,book, 20
+Order_002,Create Order,2024-01-15 09:00:00,Bob,
+Order_002,Add Item,2024-01-15 09:30:00,Bob,TV, 800
+Order_003,Create Order,2024-01-15 10:00:00,Charlie,
+Order_003,Add Item,2024-01-15 10:30:00,Charlie,smartphone; headphones, 1400
+Order_001,Quality Check,2024-01-15 11:00:00,Daniel,book, 20
+Order_002,Quality Check,2024-01-15 11:00:00,Daniel,TV, 800
+Order_003,Quality Check,2024-01-15 11:00:00,Daniel,smartphone; headphones, 1400
+,System Maintenance,2024-01-16 00:00:00,System,,
+Order_001,Ship Package,2024-01-16 13:00:00,Eve,book, 20
+Order_002,Ship Package,2024-01-16 13:30:00,Eve; Felix, TV, 800
+Order_003,Ship Package,2024-01-16 14:00:00,Eve, smartphone; headphones, 1400 

@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+
+venv/
+
+data/BPI_data/*.xes
+data/BPI_data/*.jsonocel
+
+data/generated_data/ 

@@ -1,0 +1,183 @@
+{
+  "objectTypes": [
+    {
+      "name": "order",
+      "attributes": [
+        {"name": "status", "type": "string"},
+        {"name": "value", "type": "float"}
+      ]
+    },
+    {
+      "name": "product",
+      "attributes": [
+        {"name": "name", "type": "string"},
+        {"name": "price", "type": "float"}
+      ]
+    },
+    {
+      "name": "employee",
+      "attributes": [
+        {"name": "role", "type": "string"},
+        {"name": "shift", "type": "string"}
+      ]
+    }
+  ],
+  "eventTypes": [
+    {
+      "name": "Order Placed",
+      "attributes": [
+        {"name": "source", "type": "string"}
+      ]
+    },
+    {
+      "name": "Item Added",
+      "attributes": [
+        {"name": "quantity", "type": "integer"}
+      ]
+    },
+    {
+      "name": "Payment Processed",
+      "attributes": [
+        {"name": "method", "type": "string"},
+        {"name": "success", "type": "boolean"}
+      ]
+    },
+    {
+      "name": "Order Packed",
+      "attributes": [
+        {"name": "packaging_type", "type": "string"}
+      ]
+    },
+    {
+      "name": "Order Shipped",
+      "attributes": [
+        {"name": "service", "type": "string"}
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "id": "order_101",
+      "type": "order",
+      "attributes": [
+        {"name": "status", "time": "2024-01-20T08:00:00Z", "value": "new"},
+        {"name": "status", "time": "2024-01-20T12:00:00Z", "value": "processing"},
+        {"name": "status", "time": "2024-01-21T10:00:00Z", "value": "shipped"},
+        {"name": "value", "time": "2024-01-20T08:00:00Z", "value": 299.99}
+      ],
+      "relationships": []
+    },
+    {
+      "id": "product_laptop",
+      "type": "product",
+      "attributes": [
+        {"name": "name", "time": "2024-01-20T08:00:00Z", "value": "Business Laptop"},
+        {"name": "price", "time": "2024-01-20T08:00:00Z", "value": 999.99}
+      ],
+      "relationships": []
+    },
+    {
+      "id": "product_mouse",
+      "type": "product",
+      "attributes": [
+        {"name": "name", "time": "2024-01-20T08:00:00Z", "value": "Wireless Mouse"},
+        {"name": "price", "time": "2024-01-20T08:00:00Z", "value": 29.99}
+      ],
+      "relationships": []
+    },
+    {
+      "id": "employee_john",
+      "type": "employee",
+      "attributes": [
+        {"name": "role", "time": "2024-01-20T08:00:00Z", "value": "sales"},
+        {"name": "shift", "time": "2024-01-20T08:00:00Z", "value": "morning"}
+      ],
+      "relationships": []
+    },
+    {
+      "id": "employee_mary",
+      "type": "employee",
+      "attributes": [
+        {"name": "role", "time": "2024-01-20T08:00:00Z", "value": "warehouse"},
+        {"name": "shift", "time": "2024-01-20T08:00:00Z", "value": "afternoon"}
+      ],
+      "relationships": []
+    }
+  ],
+  "events": [
+    {
+      "id": "e1",
+      "type": "Order Placed",
+      "time": "2024-01-20T08:30:00Z",
+      "attributes": [
+        {"name": "source", "value": "website"}
+      ],
+      "relationships": [
+        {"objectId": "order_101", "qualifier": "order"},
+        {"objectId": "employee_john", "qualifier": "handler"}
+      ]
+    },
+    {
+      "id": "e2",
+      "type": "Item Added",
+      "time": "2024-01-20T08:35:00Z",
+      "attributes": [
+        {"name": "quantity", "value": 1}
+      ],
+      "relationships": [
+        {"objectId": "order_101", "qualifier": "order"},
+        {"objectId": "product_laptop", "qualifier": "item"}
+      ]
+    },
+    {
+      "id": "e3",
+      "type": "Item Added",
+      "time": "2024-01-20T08:40:00Z",
+      "attributes": [
+        {"name": "quantity", "value": 2}
+      ],
+      "relationships": [
+        {"objectId": "order_101", "qualifier": "order"},
+        {"objectId": "product_mouse", "qualifier": "item"}
+      ]
+    },
+    {
+      "id": "e4",
+      "type": "Payment Processed",
+      "time": "2024-01-20T09:00:00Z",
+      "attributes": [
+        {"name": "method", "value": "credit_card"},
+        {"name": "success", "value": true}
+      ],
+      "relationships": [
+        {"objectId": "order_101", "qualifier": "order"}
+      ]
+    },
+    {
+      "id": "e5",
+      "type": "Order Packed",
+      "time": "2024-01-20T15:00:00Z",
+      "attributes": [
+        {"name": "packaging_type", "value": "standard_box"}
+      ],
+      "relationships": [
+        {"objectId": "order_101", "qualifier": "order"},
+        {"objectId": "employee_mary", "qualifier": "packer"},
+        {"objectId": "product_laptop", "qualifier": "item"},
+        {"objectId": "product_mouse", "qualifier": "item"}
+      ]
+    },
+    {
+      "id": "e6",
+      "type": "Order Shipped",
+      "time": "2024-01-21T10:00:00Z",
+      "attributes": [
+        {"name": "service", "value": "FedEx"}
+      ],
+      "relationships": [
+        {"objectId": "order_101", "qualifier": "order"},
+        {"objectId": "employee_mary", "qualifier": "handler"}
+      ]
+    }
+  ]
+}
