@@ -5,3 +5,4 @@ venv/
 
 data/BPI_data/*.xes
 data/BPI_data/*.jsonocel 
+data/generated_data/xes_to_ocel2/BPI_2012_ocel2_from_xes.json
